@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css"-->
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/league.css">
+    <link rel="stylesheet" href="league-overrides.css">
+    <style>.hll { background-color: #49483e }
+.c { color: #75715e } /* Comment */
+.err { color: #960050; background-color: #1e0010 } /* Error */
+.k { color: #66d9ef } /* Keyword */
+.l { color: #ae81ff } /* Literal */
+.n { color: #f8f8f2 } /* Name */
+.o { color: #f92672 } /* Operator */
+.p { color: #f8f8f2 } /* Punctuation */
+.ch { color: #75715e } /* Comment.Hashbang */
+.cm { color: #75715e } /* Comment.Multiline */
+.cp { color: #75715e } /* Comment.Preproc */
+.cpf { color: #75715e } /* Comment.PreprocFile */
+.c1 { color: #75715e } /* Comment.Single */
+.cs { color: #75715e } /* Comment.Special */
+.gd { color: #f92672 } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gi { color: #a6e22e } /* Generic.Inserted */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #75715e } /* Generic.Subheading */
+.kc { color: #66d9ef } /* Keyword.Constant */
+.kd { color: #66d9ef } /* Keyword.Declaration */
+.kn { color: #f92672 } /* Keyword.Namespace */
+.kp { color: #66d9ef } /* Keyword.Pseudo */
+.kr { color: #66d9ef } /* Keyword.Reserved */
+.kt { color: #66d9ef } /* Keyword.Type */
+.ld { color: #e6db74 } /* Literal.Date */
+.m { color: #ae81ff } /* Literal.Number */
+.s { color: #e6db74 } /* Literal.String */
+.na { color: #a6e22e } /* Name.Attribute */
+.nb { color: #f8f8f2 } /* Name.Builtin */
+.nc { color: #a6e22e } /* Name.Class */
+.no { color: #66d9ef } /* Name.Constant */
+.nd { color: #a6e22e } /* Name.Decorator */
+.ni { color: #f8f8f2 } /* Name.Entity */
+.ne { color: #a6e22e } /* Name.Exception */
+.nf { color: #a6e22e } /* Name.Function */
+.nl { color: #f8f8f2 } /* Name.Label */
+.nn { color: #f8f8f2 } /* Name.Namespace */
+.nx { color: #a6e22e } /* Name.Other */
+.py { color: #f8f8f2 } /* Name.Property */
+.nt { color: #f92672 } /* Name.Tag */
+.nv { color: #f8f8f2 } /* Name.Variable */
+.ow { color: #f92672 } /* Operator.Word */
+.w { color: #f8f8f2 } /* Text.Whitespace */
+.mb { color: #ae81ff } /* Literal.Number.Bin */
+.mf { color: #ae81ff } /* Literal.Number.Float */
+.mh { color: #ae81ff } /* Literal.Number.Hex */
+.mi { color: #ae81ff } /* Literal.Number.Integer */
+.mo { color: #ae81ff } /* Literal.Number.Oct */
+.sb { color: #e6db74 } /* Literal.String.Backtick */
+.sc { color: #e6db74 } /* Literal.String.Char */
+.sd { color: #e6db74 } /* Literal.String.Doc */
+.s2 { color: #e6db74 } /* Literal.String.Double */
+.se { color: #ae81ff } /* Literal.String.Escape */
+.sh { color: #e6db74 } /* Literal.String.Heredoc */
+.si { color: #e6db74 } /* Literal.String.Interpol */
+.sx { color: #e6db74 } /* Literal.String.Other */
+.sr { color: #e6db74 } /* Literal.String.Regex */
+.s1 { color: #e6db74 } /* Literal.String.Single */
+.ss { color: #e6db74 } /* Literal.String.Symbol */
+.bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+.vc { color: #f8f8f2 } /* Name.Variable.Class */
+.vg { color: #f8f8f2 } /* Name.Variable.Global */
+.vi { color: #f8f8f2 } /* Name.Variable.Instance */
+.il { color: #ae81ff } /* Literal.Number.Integer.Long */</style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section class=""><h1>Introduction To Python</h1>
+<p><img alt="Python Logo" src="imgs/python-logo-large.png" /></p>
+<h2>Session 1: Saying Hello To Python</h2></section>
+
+            <section class=""><h2>Before We Begin</h2>
+<ul>
+<li>Introductions</li>
+<li>Course Overview</li>
+<li>Session Format</li>
+</ul></section>
+
+            <section class=""><h1>Course Overview</h1>
+<ul>
+<li><strong>ASCII Art</strong> - First Steps in Python</li>
+<li><strong>The Year 2025</strong> - Variables and Operators</li>
+<li><strong>Quiz</strong> - Branching with <code>if</code>/<code>else</code></li>
+<li><strong>Turtle Power</strong> - Looping with <code>for</code></li>
+<li><strong>Game Show</strong> - <code>while</code> Loops and Random Number Generators</li>
+<li><strong>Compliment Generator</strong> - Lists</li>
+</ul>
+<p>But we can mix it up if necessary</p></section>
+
+            <section class=""><h2>Goals For This Session</h2>
+<ol>
+<li>Launching and getting around Python</li>
+<li>Learn how to display text using <code>print()</code></li>
+<li>Learn some basic string operators like <code>+</code> and <code>*</code></li>
+</ol></section>
+
+            <section class=""><h2>Step 1: Saying Hello...</h2>
+<h3>...To Python</h3></section>
+
+            <section class=""><h3>What Is Python</h3>
+<p><em>High level, general purpose programming language used for building applications and scripts.</em></p>
+<p>Primary features:</p>
+<ul>
+<li>Free and Open Source</li>
+<li>Widely used with large community</li>
+<li>Easy to learn and use</li>
+<li>Powerful and versatile</li>
+</ul></section>
+
+            <section class=""><h3>What Can Be Built With Python</h3>
+<ul>
+<li>Quick and dirty programs</li>
+<li>CLI applications: <em>Mercurial</em></li>
+<li>GUI applications: <em>IDLE</em>, <em>Calibre</em></li>
+<li>Web applications: <em>Django</em>, <em>Flask</em></li>
+<li>Games &amp; Modelling: <em>PyGame</em>, <em>Blender</em></li>
+<li>Numerical &amp; Scientific Programming: <em>NumPY</em>, <em>Iris</em></li>
+<li>Plugins for other programs: <em>Sublime Text</em></li>
+</ul></section>
+
+            <section class="img-noframe"><h3>What Is Python</h3>
+<p><img alt="Tech Stack" src="imgs/set1/tech-stack.svg" /></p></section>
+
+            <section class=""><h3>Saying Hello</h3>
+<p><em>Display "Hello, how a you?" to the screen</em></p>
+<ol>
+<li>Open the Workbook 1.</li>
+<li>
+<p>Type in the following in the left:</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello, how are you?&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Click "Run".</p>
+</li>
+</ol></section>
+
+            <section class=""><h3>What Did We Just Do?</h3>
+<p>We wrote a program that instructed Python to take a piece of text:</p>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;Hello, how are you?&quot;</span>
+</pre></div>
+
+
+<p>...and write it to the screen:</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+
+
+<p>When we ran it, Python followed our instructions to the letter:</p>
+<div class="codehilite"><pre><span></span>Hello, how are you?
+</pre></div>
+
+
+<p><strong>Congratulations</strong>: you just wrote your first Python program.</p></section>
+
+            <section class=""><h3>Exercise 1</h3>
+<p>Change the program to write something more interesting:</p>
+<ul>
+<li>
+<p>Your name:</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;My name is Leon&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>How you feel</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m feeling hungry&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>What your hobbies are</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;I enjoy reading books&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Anything else</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;I really enjoy Python&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+</li>
+</ul></section>
+
+            <section class=""><h2>Step 2: ASCII Art</h2>
+<h3>Anatomy of a Program</h3></section>
+
+            <section class=""><h3>Programs Are a Series Of Steps</h3>
+<ul>
+<li>Programs are made up of instructions, called <strong>statements</strong></li>
+<li>Each statement tells the computer to do something:<ul>
+<li>Write something to the screen (e.g. <code>print()</code>)</li>
+<li>Read input from the keyboard</li>
+<li>Perform some calculation</li>
+<li>Store something in memory</li>
+<li>Do a set, or <strong>block</strong>, of statements if some other conditions are met</li>
+</ul>
+</li>
+<li>When we <strong>run</strong> the program, the statements will be executed one after the other.</li>
+</ul>
+<p>But, how do we write these instructions?</p></section>
+
+            <section class=""><h3>Programming Language</h3>
+<ul>
+<li><strong>Programming Languages</strong> are a set of rules on how to write instructions
+  that can be understood by the computer.<ul>
+<li>How to name things</li>
+<li>How to represent values like text and numbers</li>
+<li>How to write programs with more than one instruction</li>
+<li>How to structure large, multi-file programs</li>
+</ul>
+</li>
+<li>Many, many different types of programming languages out there:<ul>
+<li>Python, C, Java, Ruby, Swift, Go, C++, JavaScript, Perl, Scala, Lisp, Prolog, Haskell, Lua...</li>
+</ul>
+</li>
+<li>The difference between them is how they are converted into instructions the computer understands</li>
+</ul></section>
+
+            <section class=""><h3>The Secret Of Computers</h3>
+<ul>
+<li>Computers are <strong>dumb</strong><ul>
+<li>They need to be explained everything (<em>print?! What's that?</em>)</li>
+</ul>
+</li>
+<li>Computers are <strong>fast</strong><ul>
+<li>2.0 GHz = 2,000,000,000 ops per second</li>
+</ul>
+</li>
+<li>We use the speed of computers to make it easier for <em>us</em> to tell them what to do.</li>
+<li>To do that, we use programs designed to understand and execute other programs.</li>
+</ul></section>
+
+            <section class="img-noframe"><h3>When We Click "Run Module"</h3>
+<p><img alt="Tech Stack" src="imgs/set1/compile-pipeline.svg" /></p></section>
+
+            <section class=""><h3>Multi-Lined Program</h3>
+<p><em>Write a program that will show a picture of a dog in ASCII Art.</em></p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;A picture of a dog...&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot; 0____   &quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;  ||||   &quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>You can also write it as:</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">A picture of a dog...</span>
+<span class="s1"> 0____</span>
+<span class="s1">  ||||</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div></section>
+
+            <section class=""><h3>Exercise 2</h3>
+<p><em>Write a program to tell others about yourself using text and ASCII art.</em></p>
+<div class="codehilite"><pre><span></span>My favourite animals are sheep:
+
+  o-###-
+    | |
+
+I work in the city:
+
+  _|_
+ |   |
+ |#  |____
+ |   |    |
+ | # |  # |
+ |   | #  |
+</pre></div></section>
+
+            <section class=""><h2>Step 3: Calculating Text</h2>
+<h3>Operations</h3></section>
+
+            <section class=""><h3>Operations</h3>
+<ul>
+<li>Fundamental way of manipulating data</li>
+<li>Operations work like mathematical expression:<ul>
+<li>Take two (or one) pieces of data: the <strong>operands</strong></li>
+<li>Processes them to produce another piece of data: the <strong>result</strong></li>
+</ul>
+</li>
+<li>Today: look at operands that will produce text (or <strong>strings</strong>) as the result</li>
+</ul></section>
+
+            <section class=""><h3>Operating On Strings</h3>
+<p>What do we get if we:</p>
+<ol>
+<li>
+<p>Multiply <code>"hello"</code> by 5?</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span> <span class="o">*</span> <span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Multiply <code>"hello "</code> by 3?</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;hello &quot;</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Add <code>"hello"</code> to <code>" world"</code>?</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="s2">&quot;world&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Subtract <code>"world"</code> from <code>"hello world"</code>?</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;hello world&quot;</span> <span class="o">-</span> <span class="s2">&quot;world&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+</li>
+</ol>
+<p>Switch to the console to try this out.</p></section>
+
+            <section class=""><h3>Exercise 3</h3>
+<p><em>Fill in the blanks to print the words on the right (without the <code>#</code>):</em></p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;ha &quot;</span> <span class="o">*</span> <span class="n">__</span><span class="p">)</span>                     <span class="c1"># ha ha ha ha</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;ba&quot;</span> <span class="o">+</span> <span class="n">__</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>                  <span class="c1"># banana</span>
+<span class="k">print</span><span class="p">(</span><span class="n">__</span>  <span class="o">+</span> <span class="s2">&quot;l&quot;</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">__</span> <span class="o">+</span> <span class="n">__</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>    <span class="c1"># Hello!!!!!!</span>
+</pre></div></section>
+
+            <section class=""><h3>Challange - ASCII Patterns</h3>
+<p><em>Write a program which will make the following patterns</em></p>
+<p>A rectangle that is made up of 3 x 30 <code>#</code>:</p>
+<div class="codehilite"><pre><span></span>##############################
+##############################
+##############################
+</pre></div>
+
+
+<p>A triangle wave of 10 cycles:</p>
+<div class="codehilite"><pre><span></span>/\  /\  /\  /\  /\  /\  /\  /\  /\  /\
+  \/  \/  \/  \/  \/  \/  \/  \/  \/  \/
+</pre></div>
+
+
+<p>A birthday cake with 5 candles:</p>
+<div class="codehilite"><pre><span></span> i  i  i  i  i
+###############
+===============
+###############
+</pre></div></section>
+
+            <section class=""><h3>Summary</h3>
+<ul>
+<li>What Python is and how it works</li>
+<li>How to start Python and write a program in it</li>
+<li>How we <code>print()</code> text to the screen</li>
+<li>How to operate on strings using <code>+</code> and <code>*</code></li>
+</ul></section>
+
+        </div>
+    </div>
+        
+    <!--script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script-->
+    <script src="reveal.js/js/reveal.js"></script>
+    <script src="reveal.js/plugin/highlight/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad(); Reveal.initialize();</script>
+</body>
+</html>

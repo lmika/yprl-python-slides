@@ -1,0 +1,38 @@
+.reveal h1 {
+    font-size: 3.0em;
+    text-transform: none;
+    font-variant: small-caps;
+}
+
+.reveal pre {
+    width: 100%;
+}
+
+.reveal div.codehilite pre {
+    background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+    border: 2px solid #eee;
+    padding: 4px 8px;
+    font-size: 0.7em;
+}
+
+.reveal strong {
+    color: #13daec;
+}
+
+.reveal code {
+    color: #e6db74;
+}
+
+.reveal .o {
+    color: #ff7eac;
+}
+
+.reveal .c1 {
+    color: #9c967d;
+}
+
+.reveal section.img-noframe img {
+    background: none;
+    border: none;
+    box-shadow: none;
+}

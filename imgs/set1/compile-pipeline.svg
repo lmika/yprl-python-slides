@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="26cm" height="15cm" viewBox="-102 24 503 287" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #90ee90" x="20" y="40" width="120" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="20" y="40" width="120" height="60"/>
+  </g>
+  <text font-size="10.7696" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="80" y="73.725">
+    <tspan x="80" y="73.725">print("Hello...")</tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #c887e4" cx="364" cy="88" rx="10" ry="10"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #c887e4" cx="364" cy="88" rx="10" ry="10"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #c887e4" cx="364" cy="88" rx="10" ry="10"/>
+  </g>
+  <g>
+    <ellipse style="fill: #c887e4" cx="338" cy="122" rx="10" ry="10"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #c887e4" cx="338" cy="122" rx="10" ry="10"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #c887e4" cx="338" cy="122" rx="10" ry="10"/>
+  </g>
+  <g>
+    <ellipse style="fill: #c887e4" cx="390" cy="122" rx="10" ry="10"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #c887e4" cx="390" cy="122" rx="10" ry="10"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #c887e4" cx="390" cy="122" rx="10" ry="10"/>
+  </g>
+  <g>
+    <ellipse style="fill: #c887e4" cx="314" cy="158" rx="10" ry="10"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #c887e4" cx="314" cy="158" rx="10" ry="10"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #c887e4" cx="314" cy="158" rx="10" ry="10"/>
+  </g>
+  <g>
+    <ellipse style="fill: #c887e4" cx="366" cy="158" rx="10" ry="10"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #c887e4" cx="366" cy="158" rx="10" ry="10"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #c887e4" cx="366" cy="158" rx="10" ry="10"/>
+  </g>
+  <text font-size="12.7998" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="312" y="184.425">
+    <tspan x="312" y="184.425">ident</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="372" y="184.425">
+    <tspan x="372" y="184.425">"Hello..."</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="308" y="124.425">
+    <tspan x="308" y="124.425">stmt</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #c887e4" x1="320.1" y1="148.851" x2="331.9" y2="131.149"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #c887e4" x1="359.26" y1="149.334" x2="344.74" y2="130.666"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #c887e4" x1="344.684" y1="113.259" x2="357.316" y2="96.7407"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #c887e4" x1="383.316" y1="113.259" x2="370.684" y2="96.7407"/>
+  <g>
+    <rect style="fill: #dfff6c" x="20" y="144" width="120" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="20" y="144" width="120" height="60"/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="80" y="174">
+    <tspan x="80" y="174"></tspan>
+  </text>
+  <text font-size="9.41493" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="80" y="165.481">
+    <tspan x="80" y="165.481">mv reg1, "Hello..."</tspan>
+    <tspan x="80" y="177.25">call print, reg1</tspan>
+    <tspan x="80" y="189.019">halt</tspan>
+  </text>
+  <g>
+    <rect style="fill: #1e90ff" x="160" y="240" width="120" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="160" y="240" width="120" height="60"/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="220" y="266.425">
+    <tspan x="220" y="266.425">Hello,</tspan>
+    <tspan x="220" y="282.425">how are you?</tspan>
+  </text>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" d="M 301.197,95.8496 A 303.798,303.798 0 0 0 150,70"/>
+    <polygon style="fill: #ffffff" points="307.993,99.0142 296.813,99.0931 301.261,95.7075 301.222,90.1175 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" points="307.993,99.0142 296.813,99.0931 301.261,95.7075 301.222,90.1175 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" d="M 159.664,171.14 A 257.488,257.488 0 0 0 290,150"/>
+    <polygon style="fill: #ffffff" points="152.215,170.304 162.802,166.709 159.646,171.323 161.443,176.616 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" points="152.215,170.304 162.802,166.709 159.646,171.323 161.443,176.616 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" d="M 40,210 A 87.4845,87.4845 0 0 0 140.54,282.102"/>
+    <polygon style="fill: #ffffff" points="147.847,280.605 139.574,288.125 140.627,282.635 136.867,278.498 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" points="147.847,280.605 139.574,288.125 140.627,282.635 136.867,278.498 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x1="-70" y1="70" x2="0.263932" y2="70"/>
+    <polygon style="fill: #ffffff" points="7.76393,70 -2.23607,75 0.263932,70 -2.23607,65 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" points="7.76393,70 -2.23607,75 0.263932,70 -2.23607,65 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #ffffff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-90" y="60">
+    <tspan x="-90" y="60">Run Module</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #ffffff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="200" y="60">
+    <tspan x="200" y="60">Compilation</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #ffffff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="180" y="160">
+    <tspan x="180" y="160">Generation</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #ffffff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-30" y="220">
+    <tspan x="-30" y="220">Execution</tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #00ff00" cx="75" cy="265" rx="35" ry="35"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" cx="75" cy="265" rx="35" ry="35"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" cx="75" cy="265" rx="35" ry="35"/>
+  </g>
+  <g>
+    <ellipse style="fill: #0000ff" cx="-65" cy="275" rx="35" ry="35"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" cx="-65" cy="275" rx="35" ry="35"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" cx="-65" cy="275" rx="35" ry="35"/>
+  </g>
+  <text font-size="12.7998" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-65" y="279.425">
+    <tspan x="-65" y="279.425">OS</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="75" y="269.425">
+    <tspan x="75" y="269.425">VM</tspan>
+  </text>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" d="M 36,260 A 59.3088,59.3088 0 0 0 -19.7934,258.943"/>
+    <polygon style="fill: #ffffff" points="-26.1979,262.676 -21.0989,252.726 -20.1535,258.236 -15.1786,260.786 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" points="-26.1979,262.676 -21.0989,252.726 -20.1535,258.236 -15.1786,260.786 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" d="M -28,292 A 69.1973,69.1973 0 0 0 31.3982,294.406"/>
+    <polygon style="fill: #ffffff" points="38.0859,291.156 32.1105,300.606 31.6658,295.033 26.941,292.045 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" points="38.0859,291.156 32.1105,300.606 31.6658,295.033 26.941,292.045 "/>
+  </g>
+  <text font-size="12.8" style="fill: #ffffff;text-anchor:start;font-family:sans-serif;font-style:italic;font-weight:normal" x="198" y="236">
+    <tspan x="198" y="236">Output</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #ffffff;text-anchor:start;font-family:sans-serif;font-style:italic;font-weight:normal" x="52" y="36">
+    <tspan x="52" y="36">hello.py</tspan>
+  </text>
+</svg>

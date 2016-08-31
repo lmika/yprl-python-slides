@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="15cm" height="12cm" viewBox="2 153 283 230" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #bfbfbf" x="60" y="344" width="224" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="60" y="344" width="224" height="38"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="172" y="366.9">
+      <tspan x="172" y="366.9">Hardware</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #1e90ff" x="60" y="296" width="224" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="60" y="296" width="224" height="38"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="172" y="318.9">
+      <tspan x="172" y="318.9">Operating System</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #00ff00" x="60" y="248" width="224" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="60" y="248" width="224" height="38"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="172" y="270.9">
+      <tspan x="172" y="270.9">Python</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #90ee90" x="60" y="154.828" width="66.35" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="60" y="154.828" width="66.35" height="38"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="93.175" y="177.728">
+      <tspan x="93.175" y="177.728">.py</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #90ee90" x="140" y="154.828" width="66.35" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="140" y="154.828" width="66.35" height="38"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="173.175" y="177.728">
+      <tspan x="173.175" y="177.728">.py</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #90ee90" x="220" y="154.828" width="64" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="220" y="154.828" width="64" height="38"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="252" y="177.728">
+      <tspan x="252" y="177.728">.py</tspan>
+    </text>
+  </g>
+  <text font-size="12.7998" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="24" y="212.425">
+    <tspan x="24" y="212.425">Higher</tspan>
+    <tspan x="24" y="228.425">Level</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="24" y="312.425">
+    <tspan x="24" y="312.425">Lower</tspan>
+    <tspan x="24" y="328.425">Level</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #ffffff" points="15.5,281 15.5,251 8,251 23,236 38,251 30.5,251 30.5,281 38,281 23,296 8,281 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" points="15.5,281 15.5,251 8,251 23,236 38,251 30.5,251 30.5,281 38,281 23,296 8,281 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" points="15.5,281 15.5,251 8,251 23,236 38,251 30.5,251 30.5,281 38,281 23,296 8,281 "/>
+  </g>
+  <g>
+    <rect style="fill: #dfff6c" x="60" y="201.061" width="224" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="60" y="201.061" width="224" height="38"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="172" y="223.961">
+      <tspan x="172" y="223.961">Libraries and Frameworks</tspan>
+    </text>
+  </g>
+</svg>
