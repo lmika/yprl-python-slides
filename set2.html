@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css"-->
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/league.css">
+    <link rel="stylesheet" href="league-overrides.css">
+    <style>.hll { background-color: #49483e }
+.c { color: #75715e } /* Comment */
+.err { color: #960050; background-color: #1e0010 } /* Error */
+.k { color: #66d9ef } /* Keyword */
+.l { color: #ae81ff } /* Literal */
+.n { color: #f8f8f2 } /* Name */
+.o { color: #f92672 } /* Operator */
+.p { color: #f8f8f2 } /* Punctuation */
+.ch { color: #75715e } /* Comment.Hashbang */
+.cm { color: #75715e } /* Comment.Multiline */
+.cp { color: #75715e } /* Comment.Preproc */
+.cpf { color: #75715e } /* Comment.PreprocFile */
+.c1 { color: #75715e } /* Comment.Single */
+.cs { color: #75715e } /* Comment.Special */
+.gd { color: #f92672 } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gi { color: #a6e22e } /* Generic.Inserted */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #75715e } /* Generic.Subheading */
+.kc { color: #66d9ef } /* Keyword.Constant */
+.kd { color: #66d9ef } /* Keyword.Declaration */
+.kn { color: #f92672 } /* Keyword.Namespace */
+.kp { color: #66d9ef } /* Keyword.Pseudo */
+.kr { color: #66d9ef } /* Keyword.Reserved */
+.kt { color: #66d9ef } /* Keyword.Type */
+.ld { color: #e6db74 } /* Literal.Date */
+.m { color: #ae81ff } /* Literal.Number */
+.s { color: #e6db74 } /* Literal.String */
+.na { color: #a6e22e } /* Name.Attribute */
+.nb { color: #f8f8f2 } /* Name.Builtin */
+.nc { color: #a6e22e } /* Name.Class */
+.no { color: #66d9ef } /* Name.Constant */
+.nd { color: #a6e22e } /* Name.Decorator */
+.ni { color: #f8f8f2 } /* Name.Entity */
+.ne { color: #a6e22e } /* Name.Exception */
+.nf { color: #a6e22e } /* Name.Function */
+.nl { color: #f8f8f2 } /* Name.Label */
+.nn { color: #f8f8f2 } /* Name.Namespace */
+.nx { color: #a6e22e } /* Name.Other */
+.py { color: #f8f8f2 } /* Name.Property */
+.nt { color: #f92672 } /* Name.Tag */
+.nv { color: #f8f8f2 } /* Name.Variable */
+.ow { color: #f92672 } /* Operator.Word */
+.w { color: #f8f8f2 } /* Text.Whitespace */
+.mb { color: #ae81ff } /* Literal.Number.Bin */
+.mf { color: #ae81ff } /* Literal.Number.Float */
+.mh { color: #ae81ff } /* Literal.Number.Hex */
+.mi { color: #ae81ff } /* Literal.Number.Integer */
+.mo { color: #ae81ff } /* Literal.Number.Oct */
+.sb { color: #e6db74 } /* Literal.String.Backtick */
+.sc { color: #e6db74 } /* Literal.String.Char */
+.sd { color: #e6db74 } /* Literal.String.Doc */
+.s2 { color: #e6db74 } /* Literal.String.Double */
+.se { color: #ae81ff } /* Literal.String.Escape */
+.sh { color: #e6db74 } /* Literal.String.Heredoc */
+.si { color: #e6db74 } /* Literal.String.Interpol */
+.sx { color: #e6db74 } /* Literal.String.Other */
+.sr { color: #e6db74 } /* Literal.String.Regex */
+.s1 { color: #e6db74 } /* Literal.String.Single */
+.ss { color: #e6db74 } /* Literal.String.Symbol */
+.bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+.vc { color: #f8f8f2 } /* Name.Variable.Class */
+.vg { color: #f8f8f2 } /* Name.Variable.Global */
+.vi { color: #f8f8f2 } /* Name.Variable.Instance */
+.il { color: #ae81ff } /* Literal.Number.Integer.Long */</style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section class="">
+                <h1>Introduction To Python</h1>
+<p><img alt="Python Logo" src="imgs/python-logo-large.png" /></p>
+<h2>Session 2: Variables and Operators</h2>
+<h2>Goals For This Session</h2>
+<ol>
+<li>Learn about arithmetic operators</li>
+<li>Learn about variables</li>
+<li>Learn how to accept input from a user</li>
+<li>Build a program which will calculate someones age in 2025</li>
+</ol>
+<h2>Step 1: 2+2=</h2>
+<h3>Arithmetic Operators</h3>
+<h3>More About Types</h3>
+<ul>
+<li>
+<p>We've seen operators that work on strings:</p>
+<div class="codehilite"><pre><span></span>&quot;Hello &quot; + &quot;world&quot; = &quot;Hello world&quot;
+</pre></div>
+
+
+</li>
+<li>
+<p>Operators can also work on other types as well</p>
+</li>
+</ul>
+<p>But to fully understand how, we need to know what <em>types</em> are</p>
+<ul>
+<li>XXX - Types</li>
+</ul>
+<h3>Numerical Operators</h3>
+<p>Takes two numbers and produces another number</p>
+<ul>
+<li><code>+</code>: Add two numbers</li>
+<li><code>-</code>: Subtract two numbers</li>
+<li><code>*</code>: Multiply two numbers</li>
+<li><code>/</code>: Divide two numbers</li>
+</ul>
+<p>These operators can be used to formulate mathematical expressions:</p>
+<div class="codehilite"><pre><span></span>print(2 * (5 - 7) + 12)
+8
+</pre></div>
+
+
+<h3>Exercise 1</h3>
+<p><em>Use operators to work out how old someone will be in 2025</em></p>
+<div class="codehilite"><pre><span></span>Since you were born in:
+1985
+you will be:
+40
+in 2025.
+</pre></div>
+
+
+<p>See if you can build it using only the birth year, the number 2025
+and numerical operators.</p>
+<p>Hint: age in 2025 = 2025 - birth year</p>
+<h3>Aside - Printing In One Line</h3>
+<ul>
+<li>The <code>print</code> command can accept multiple <strong>arguments</strong> which will be displayed
+  on a single line.</li>
+<li>To do so, simply separate each argument by <code>,</code>:<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Since you were born in&quot;</span><span class="p">,</span> <span class="mi">1985</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;you will be&quot;</span><span class="p">,</span> <span class="mi">2025</span> <span class="o">-</span> <span class="mi">1985</span><span class="p">,</span> <span class="s2">&quot;in 2025.&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+</li>
+</ul>
+<h2>Step 2: Variables</h2>
+<h3>Storing Values In Memory</h3>
+<h3>The Importance Of Memory</h3>
+<div class="codehilite"><pre><span></span>    :::python
+    print(&quot;Since you were born in&quot;, 1985)
+    print(&quot;you will be&quot;, 2025 - 1985, &quot;in 2025.&quot;)
+</pre></div>
+
+
+<ul>
+<li>What needs to be done if we want to change any of the years used?</li>
+<li>What if we need to run this for 30 different people, each born in a different year?</li>
+<li>What if we want to ask the user first?</li>
+</ul>
+<p>Need to allow for values to change without changing the code</p>
+<h3>Variables</h3>
+<ul>
+<li>Reference to memory to store a value</li>
+<li>
+<p>Identified by a name: <code>birthYear</code></p>
+</li>
+<li>
+<p>XXX Picture</p>
+</li>
+</ul>
+<h3>Variables</h3>
+<ul>
+<li>
+<p>Values are stored in (or <strong>assigned</strong>) to a variable using the <code>=</code> operator:</p>
+<div class="codehilite"><pre><span></span><span class="n">birthYear</span> <span class="o">=</span> <span class="mi">1985</span>        <span class="c1"># Variable on left, value on right</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>When using a variable name in place of a value, the variable's value will be used instead:</p>
+<div class="codehilite"><pre><span></span><span class="mi">2025</span> <span class="o">-</span> <span class="n">birthYear</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Variables can also be set from the value of other variables (or even itself)</p>
+<div class="codehilite"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="mi">2025</span> <span class="o">-</span> <span class="n">birthYear</span>
+<span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+
+
+</li>
+</ul>
+<h3>Exercise 2</h3>
+<p><em>How old is someone if they were born in 1999?</em></p>
+<p>Change your program to store the person's birth year in a variable called <code>year</code></p>
+<div class="codehilite"><pre><span></span>Since you were born in 1999
+you will be 26 in 2025
+</pre></div>
+
+
+<p>After that, change the variable value to see how old someone will be if they were born in:</p>
+<ul>
+<li>1995</li>
+<li>1978</li>
+<li>1950</li>
+<li>1933</li>
+</ul>
+<h2>Step 3: Input</h2>
+<h3>Accepting Input From The User</h3>
+<h3>The Importance Of Input</h3>
+<p><em>"Variables are great, but we're still changing the program if we want to test for a particular year"</em></p>
+<ul>
+<li>We've used variables to store constant values within our program</li>
+<li>Now, we'll use variables to store values coming <em>outside</em> our program</li>
+</ul>
+<p>We'll learn how to ask the user for values</p>
+<h3>The <code>input()</code> Function</h3>
+<p><code>input(prompt)</code> - displays <em>prompt</em>, reads a line of input, converts it to a string, and returns that</p>
+<div class="codehilite"><pre><span></span>    :::python
+    year = input(&quot;What year were you born? &quot;)
+    age = 2025 - year
+</pre></div>
+
+
+<p>What happens when we try that?</p>
+<div class="codehilite"><pre><span></span><span class="n">TypeError</span><span class="o">:</span> <span class="n">unsupported</span> <span class="n">operand</span> <span class="n">type</span><span class="o">(</span><span class="n">s</span><span class="o">)</span> <span class="k">for</span> <span class="n">Sub</span><span class="o">:</span> <span class="s1">&#39;int&#39;</span> <span class="n">and</span> <span class="s1">&#39;str&#39;</span>
+</pre></div>
+
+
+<p>What happened? We're mixing a number with a string</p>
+<p><em>Numerical operators take two numbers and produce another number</em></p>
+<p>Need to find a way to convert a string into a number...</p>
+<h3>The <code>int()</code> Function</h3>
+<p><code>int(x)</code> - returns an integer constructed from a number or a string</p>
+<div class="codehilite"><pre><span></span>    :::python
+    year = input(&quot;What year were you born? &quot;)
+    age = 2025 - int(year)
+</pre></div>
+
+
+<p>What do we get now?</p>
+<h3>Exercise 3</h3>
+<p><em>Change your program to accept two years: the person's birth year and the year they want to know their age.</em></p>
+<div class="codehilite"><pre><span></span>What year were you born? 1987
+What year do you want to know your age? 1993
+Since you were born in 1987
+you will be 6 in 1993
+</pre></div>
+
+
+<p>Use this program to see how old someone will be in:</p>
+<ul>
+<li>2005, if they were born in 1990</li>
+<li>2015, if they were born in 1981</li>
+<li>1987, if they were born in 1959</li>
+<li>1761, if they were born in 1711</li>
+</ul>
+<h3>Challenges</h3>
+<p><em>Extend your program to print out the person's age in doggy years:</em></p>
+<div class="codehilite"><pre><span></span>What year were you born? 1987
+What year do you want to know your age? 1993
+Since you were born in 1987
+you will be 6 in 1993
+If you were a dog, you would be 42 in 1993
+</pre></div>
+
+
+<p><em>Change your program to calculate what year the person will be at a certain age:</em></p>
+<div class="codehilite"><pre><span></span>What year were you born? 1987
+When do you want to know how old you&#39;ll be? 12
+Since you were born in 1987
+you will be 12 in 1999
+</pre></div>
+
+
+<h3>Summary</h3>
+
+                
+            </section>
+
+        </div>
+    </div>
+        
+    <!--script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script-->
+    <script src="reveal.js/js/reveal.js"></script>
+    <script src="reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="reveal.js/plugin/notes/notes.js"></script>
+    <script>hljs.initHighlightingOnLoad(); Reveal.initialize();</script>
+</body>
+</html>
