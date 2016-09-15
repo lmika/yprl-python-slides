@@ -75,64 +75,70 @@
     <div class="reveal">
         <div class="slides">
 
+    
             <section class="">
-                <h1>Introduction To Python</h1>
+                <h1>Coding With Python</h1>
 <p><img alt="Python Logo" src="imgs/python-logo-large.png" /></p>
 <h2>Session 1: First Steps in Python</h2>
 
                 
             </section>
+    
 
+    
             <section class="">
-                <h2>Before We Begin</h2>
+                <h1>Session Overview</h1>
 <ul>
-<li>Introductions</li>
-<li>Course Overview</li>
-<li>Session Format</li>
-</ul>
-
-                
-            </section>
-
-            <section class="">
-                <h1>Course Overview</h1>
-<ul>
-<li>First Steps in Python</li>
-<li>Variables and Operators</li>
-<li>Branching with <code>if</code>/<code>else</code></li>
-<li>Looping with <code>for</code> and <code>while</code></li>
-<li>Lists and Dictionaries</li>
-<li>Defining Functions</li>
+<li>Introduction to Python</li>
+<li>Using variables and operators</li>
+<li>How to use the <code>if</code> statement</li>
+<li>How to work with loops</li>
+<li>What lists and dictionaries are</li>
+<li>How to write functions</li>
 </ul>
 <p>But we can mix it up if necessary</p>
 
                 
             </section>
+    
 
+    
+            <section class="">
+                <h2>Introductions</h2>
+
+                
+            </section>
+    
+
+    
             <section class="">
                 <h2>Goals For This Session</h2>
 <ol>
-<li>Launching and getting around Python</li>
+<li>Introducing ourselves to Python</li>
 <li>Learn how to display text using <code>print()</code></li>
 <li>Learn some basic string operators like <code>+</code> and <code>*</code></li>
 </ol>
 
                 
             </section>
+    
 
+    
             <section class="">
                 <h2>Step 1: Saying Hello...</h2>
 <h3>...To Python</h3>
 
                 
             </section>
+    
 
+    
             <section class="">
                 <h3>What Is Python</h3>
-<p><em>High level, general purpose programming language used for building applications and scripts.</em></p>
-<p>Primary features:</p>
 <ul>
-<li>Free and Open Source</li>
+<li>Language for writing software applications and scripts</li>
+<li>Free</li>
+<li>Open Source</li>
 <li>Widely used with large community</li>
 <li>Easy to learn and use</li>
 <li>Powerful and versatile</li>
@@ -140,38 +146,50 @@
 
                 
             </section>
+    
 
+    
             <section class="">
                 <h3>What Can Be Built With Python</h3>
 <ul>
-<li>Quick and dirty programs</li>
-<li>CLI applications: <em>Mercurial</em></li>
-<li>GUI applications: <em>IDLE</em>, <em>Calibre</em></li>
-<li>Web applications: <em>Django</em>, <em>Flask</em></li>
-<li>Games &amp; Modelling: <em>PyGame</em>, <em>Blender</em></li>
-<li>Numerical &amp; Scientific Programming: <em>NumPY</em>, <em>Iris</em></li>
-<li>Plugins for other programs: <em>Sublime Text</em></li>
+<li>Quick scripts</li>
+<li>Desktop applications</li>
+<li>Web application</li>
+<li>Games</li>
+<li>Plugins</li>
 </ul>
 
                 
+                    <aside class="notes"><ul>
+<li>2: IDLE, Calibre (ebook),</li>
+<li>3: Yelp</li>
+<li>4: PyGame, Blender</li>
+<li>5: Sublime Text</li>
+</ul></aside>
+                
             </section>
+    
 
+    
             <section class="img-noframe">
                 <h3>What Is Python</h3>
 <p><img alt="Tech Stack" src="imgs/set1/tech-stack.svg" /></p>
 
                 
             </section>
+    
 
+    
             <section class="">
                 <h3>Saying Hello</h3>
 <p><em>Display "Hello, how a you?" to the screen</em></p>
 <ol>
-<li>Goto <a href="https://lmika.github.io/yprl-python-workbooks/">https://lmika.github.io/yprl-python-workbooks/</a></li>
+<li>Goto <a href="http://tinyurl.com/hnxv6o6">http://tinyurl.com/hnxv6o6</a></li>
 <li>Open the Workbook 1.</li>
 <li>
 <p>Type in the following in the left:</p>
-<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello, how are you?&quot;</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span><span class="ch">#!python3</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello, how are you?&quot;</span><span class="p">)</span>
 </pre></div>
 
 
@@ -183,29 +201,38 @@
 
                 
             </section>
+    
 
+    
             <section class="">
-                <h3>What Did We Just Do?</h3>
-<p>We wrote a program that instructed Python to take a piece of text:</p>
-<div class="codehilite"><pre><span></span><span class="s2">&quot;Hello, how are you?&quot;</span>
+                <h3>Breaking It Down</h3>
+<ul>
+<li>
+<p>Two things in this program:</p>
+<ul>
+<li>A <strong>statement</strong> called <code>print()</code></li>
+<li>A piece of text <em>Hello, how are you?</em> in double quotes</li>
+</ul>
+</li>
+<li>
+<p>We wrote a program which will:</p>
+<ol>
+<li>Takes the piece of text in double quotes, and</li>
+<li>Use the <em>print</em> statement to display it to the screen.<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello, how are you?&quot;</span><span class="p">)</span>
 </pre></div>
 
 
-<p>...and write it to the screen:</p>
-<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
-</pre></div>
-
-
-<p>When we ran it, Python followed our instructions to the letter:</p>
-<div class="codehilite"><pre><span></span>Hello, how are you?
-</pre></div>
-
-
+</li>
+</ol>
+</li>
+</ul>
 <p>Congratulations: you just wrote your first Python program.</p>
 
                 
             </section>
+    
 
+    
             <section class="">
                 <h3>Exercise 1</h3>
 <p>Change the program to write something more interesting:</p>
@@ -242,18 +269,23 @@
 
                 
             </section>
+    
 
+    
             <section class="">
                 <h2>Step 2: ASCII Art</h2>
 <h3>Anatomy of a Program</h3>
 
                 
             </section>
+    
 
+    
             <section class="">
                 <h3>Programs Are a Series Of Steps</h3>
 <ul>
-<li>Programs are made up of instructions, called <strong>statements</strong>.</li>
+<li>Programs are made up of instructions (e.g. <code>print</code>).</li>
+<li>These instructions are called <strong>statements</strong>.</li>
 <li>Each statement tells the computer to do something.</li>
 <li>When we <strong>run</strong> the program, the statements will be executed one after the other.</li>
 </ul>
@@ -265,14 +297,16 @@
 </ul></aside>
                 
             </section>
+    
 
+    
             <section class="">
                 <h3>Programming Language</h3>
 <ul>
 <li><strong>Programming Languages</strong> are a set of rules on how to write instructions
   that can be understood by the computer.</li>
 <li>Many, many different types of programming languages out there.</li>
-<li>The difference between them is how they are converted into instructions the computer understands.</li>
+<li>The difference between them is how they let you express what you want the computer to do.</li>
 </ul>
 
                 
@@ -282,33 +316,24 @@
 </ul></aside>
                 
             </section>
+    
 
-            <section class="">
-                <h3>The Secret Of Computers</h3>
-<ul>
-<li>Computers are <strong>dumb</strong>.</li>
-<li>Computers are <strong>fast</strong>.</li>
-<li>We use the speed of computers to make it easier for <em>us</em> to tell them what to do.</li>
-<li>To do that, we use programs designed to understand and execute other programs.</li>
-</ul>
+    
 
-                
-                    <aside class="notes"><ul>
-<li>1: need to be explained everything</li>
-<li>2: 2.0 GHz = 2,000,000,000 ops per secton</li>
-</ul></aside>
-                
-            </section>
+    
 
+    
             <section class="img-noframe">
-                <h3>When We Click "Run Module"</h3>
+                <h3>When We Click "Run"</h3>
 <p><img alt="Tech Stack" src="imgs/set1/compile-pipeline.svg" /></p>
 
                 
             </section>
+    
 
+    
             <section class="">
-                <h3>Multi-Lined Program</h3>
+                <h3>Program With Multiple Statements</h3>
 <p><em>Write a program that will show a picture of a dog in ASCII Art.</em></p>
 <div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;A picture of a dog...&quot;</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="s2">&quot; 0____   &quot;</span><span class="p">)</span>
@@ -317,16 +342,18 @@
 
 
 <p>You can also write it as:</p>
-<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
-<span class="s1">A picture of a dog...</span>
-<span class="s1"> 0____</span>
-<span class="s1">  ||||</span>
-<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">A picture of a dog...</span>
+<span class="s2"> 0____</span>
+<span class="s2">  ||||</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 
                 
             </section>
+    
 
+    
             <section class="">
                 <h3>Exercise 2</h3>
 <p><em>Write a program to tell others about yourself using text and ASCII art.</em></p>
@@ -347,14 +374,18 @@ I work in the city:
 
                 
             </section>
+    
 
+    
             <section class="">
                 <h2>Step 3: Calculating Text</h2>
 <h3>Operations</h3>
 
                 
             </section>
+    
 
+    
             <section class="">
                 <h3>Operations</h3>
 <ul>
@@ -369,7 +400,9 @@ I work in the city:
 
                 
             </section>
+    
 
+    
             <section class="">
                 <h3>Operating On Strings</h3>
 <p>What do we get if we:</p>
@@ -382,14 +415,14 @@ I work in the city:
 
 </li>
 <li>
-<p>Multiply <code>"hello "</code> by 3?</p>
-<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;hello &quot;</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>
+<p>Multiply <code>"hello "</code> by 5?</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;hello &quot;</span> <span class="o">*</span> <span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
 
 </li>
 <li>
-<p>Add <code>"hello"</code> to <code>" world"</code>?</p>
+<p>Add <code>"hello "</code> to <code>"world"</code>?</p>
 <div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="s2">&quot;world&quot;</span><span class="p">)</span>
 </pre></div>
 
@@ -406,7 +439,9 @@ I work in the city:
 
                 
             </section>
+    
 
+    
             <section class="">
                 <h3>Exercise 3</h3>
 <p><em>Fill in the blanks to print the words on the right (without the <code>#</code>):</em></p>
@@ -417,7 +452,9 @@ I work in the city:
 
                 
             </section>
+    
 
+    
             <section class="">
                 <h3>Challange - ASCII Patterns</h3>
 <p><em>Write a program which will make the following patterns</em></p>
@@ -443,18 +480,30 @@ I work in the city:
 
                 
             </section>
+    
 
+    
             <section class="">
                 <h3>Summary</h3>
 <ul>
-<li>What Python is and how it works</li>
-<li>How to start Python and write a program in it</li>
-<li>How we <code>print()</code> text to the screen</li>
-<li>How to operate on strings using <code>+</code> and <code>*</code></li>
+<li>Programs are a series of instructions (statements) for a computer to execute</li>
+<li>Python is a set of rules for writing these instructions understood by us and the computer</li>
+<li>The <code>print()</code> statement can be used to write text to screen</li>
+<li>Text (strings) can be manipulated using the <code>+</code> and <code>*</code> operators.</li>
 </ul>
 
                 
             </section>
+    
+
+    
+            <section class="">
+                <h3>One Last Thing</h3>
+<p>Installing Python at home</p>
+
+                
+            </section>
+    
 
         </div>
     </div>

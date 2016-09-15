@@ -33,13 +33,13 @@
     <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #c887e4" cx="366" cy="158" rx="10" ry="10"/>
     <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #c887e4" cx="366" cy="158" rx="10" ry="10"/>
   </g>
-  <text font-size="12.7998" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="312" y="184.425">
-    <tspan x="312" y="184.425">ident</tspan>
+  <text font-size="12.8" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="312" y="184.238">
+    <tspan x="312" y="184.238">print()</tspan>
   </text>
-  <text font-size="12.7998" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="372" y="184.425">
+  <text font-size="12.8" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="372" y="184.425">
     <tspan x="372" y="184.425">"Hello..."</tspan>
   </text>
-  <text font-size="12.7998" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="308" y="124.425">
+  <text font-size="12.8" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="308" y="124.425">
     <tspan x="308" y="124.425">stmt</tspan>
   </text>
   <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #c887e4" x1="320.1" y1="148.851" x2="331.9" y2="131.149"/>
@@ -50,7 +50,7 @@
     <rect style="fill: #dfff6c" x="20" y="144" width="120" height="60"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="20" y="144" width="120" height="60"/>
   </g>
-  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="80" y="174">
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="80" y="174">
     <tspan x="80" y="174"></tspan>
   </text>
   <text font-size="9.41493" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="80" y="165.481">
@@ -62,7 +62,7 @@
     <rect style="fill: #1e90ff" x="160" y="240" width="120" height="60"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="160" y="240" width="120" height="60"/>
   </g>
-  <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="220" y="266.425">
+  <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="220" y="266.425">
     <tspan x="220" y="266.425">Hello,</tspan>
     <tspan x="220" y="282.425">how are you?</tspan>
   </text>
@@ -86,16 +86,16 @@
     <polygon style="fill: #ffffff" points="7.76393,70 -2.23607,75 0.263932,70 -2.23607,65 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" points="7.76393,70 -2.23607,75 0.263932,70 -2.23607,65 "/>
   </g>
-  <text font-size="12.7998" style="fill: #ffffff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-90" y="60">
-    <tspan x="-90" y="60">Run Module</tspan>
+  <text font-size="12.8" style="fill: #ffffff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-49.3361" y="62.1423">
+    <tspan x="-49.3361" y="62.1423">Run</tspan>
   </text>
-  <text font-size="12.7998" style="fill: #ffffff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="200" y="60">
+  <text font-size="12.8" style="fill: #ffffff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="200" y="60">
     <tspan x="200" y="60">Compilation</tspan>
   </text>
-  <text font-size="12.7998" style="fill: #ffffff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="180" y="160">
+  <text font-size="12.8" style="fill: #ffffff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="180" y="160">
     <tspan x="180" y="160">Generation</tspan>
   </text>
-  <text font-size="12.7998" style="fill: #ffffff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-30" y="220">
+  <text font-size="12.8" style="fill: #ffffff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-30" y="220">
     <tspan x="-30" y="220">Execution</tspan>
   </text>
   <g>
@@ -108,10 +108,10 @@
     <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" cx="-65" cy="275" rx="35" ry="35"/>
     <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" cx="-65" cy="275" rx="35" ry="35"/>
   </g>
-  <text font-size="12.7998" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-65" y="279.425">
+  <text font-size="12.8" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-65" y="279.425">
     <tspan x="-65" y="279.425">OS</tspan>
   </text>
-  <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="75" y="269.425">
+  <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="75" y="269.425">
     <tspan x="75" y="269.425">VM</tspan>
   </text>
   <g>

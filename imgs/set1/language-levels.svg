@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="21cm" height="3cm" viewBox="-32 52 420 55" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x1="-14.2639" y1="80" x2="350.264" y2="80"/>
+    <polygon style="fill: #ffffff" points="-21.7639,80 -11.7639,75 -14.2639,80 -11.7639,85 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" points="-21.7639,80 -11.7639,75 -14.2639,80 -11.7639,85 "/>
+    <polygon style="fill: #ffffff" points="357.764,80 347.764,85 350.264,80 347.764,75 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" points="357.764,80 347.764,85 350.264,80 347.764,75 "/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x1="160" y1="68" x2="160" y2="92"/>
+  <text font-size="12.7998" style="fill: #ffffff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-32" y="104">
+    <tspan x="-32" y="104">Low Level</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #ffffff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="320" y="104">
+    <tspan x="320" y="104">High Level</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="0" y="64">
+    <tspan x="0" y="64">Asm</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="44" y="64">
+    <tspan x="44" y="64">C</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="88" y="64">
+    <tspan x="88" y="64">Java</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="160" y="64">
+    <tspan x="160" y="64">Python</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="236" y="64">
+    <tspan x="236" y="64">Lisp</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #ffffff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="300" y="64">
+    <tspan x="300" y="64">Haskell</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x1="0" y1="76" x2="0" y2="84"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x1="44" y1="76" x2="44" y2="84"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x1="88" y1="76" x2="88" y2="84"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x1="236" y1="76" x2="236" y2="84"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x1="300" y1="76" x2="300" y2="84"/>
+</svg>
