@@ -80,47 +80,143 @@
                 <h1>Coding With Python</h1>
 <p><img alt="Python Logo" src="imgs/python-logo-large.png" /></p>
 <h2>Session 2: Variables and Operators</h2>
-<h2>Goals For This Session</h2>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h2>Goals For This Session</h2>
 <ol>
 <li>Learn about arithmetic operators</li>
 <li>Learn about variables</li>
 <li>Learn how to accept input from a user</li>
-<li>Build a program which will calculate someones age in 2025</li>
 </ol>
-<h2>Step 1: 2+2=</h2>
+<p>We'll use this to build an age calculator</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h2>Age Calculator</h2>
+<iframe src="https://trinket.io/embed/python/a980280a38?outputOnly=true&amp;start=result" width="100%" height="400"
+        frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h2>Step 1: 2+2=</h2>
 <h3>Arithmetic Operators</h3>
-<h3>More About Types</h3>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Operators Revisited</h3>
 <ul>
 <li>
 <p>We've seen operators that work on strings:</p>
-<div class="codehilite"><pre><span></span>&quot;Hello &quot; + &quot;world&quot; = &quot;Hello world&quot;
+<div class="codehilite"><pre><span></span><span class="s2">&quot;Hello &quot;</span> <span class="o">+</span> <span class="s2">&quot;world&quot;</span> <span class="o">=</span> <span class="s2">&quot;Hello world&quot;</span>
+<span class="s2">&quot;Three &quot;</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">=</span> <span class="s2">&quot;Three Three Three&quot;</span>
 </pre></div>
 
 
 </li>
 <li>
-<p>Operators can also work on other types as well</p>
+<p>Python has operators that work on other types</p>
 </li>
 </ul>
-<p>But to fully understand how, we need to know what <em>types</em> are</p>
+<p>But what is a type?</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Types</h3>
 <ul>
-<li>XXX - Types</li>
+<li>Classifying what a piece of data represents in a program</li>
+<li>Every value in Python has a type:<ul>
+<li>Integers: <code>123</code>, <code>-12</code></li>
+<li>Floating points: <code>15.0</code>, <code>3.14</code></li>
+<li>Strings: <code>"Hello world"</code>, <code>'Another string'</code></li>
 </ul>
-<h3>Numerical Operators</h3>
+</li>
+<li>The language defines certain properties and rules for each type<ul>
+<li>How they look in the program</li>
+<li>How they are stored in memory</li>
+<li>What operations can be performed on them</li>
+</ul>
+</li>
+</ul>
+
+                
+                    <aside class="notes"><ul>
+<li>Type defines</li>
+</ul></aside>
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Numerical Operators</h3>
 <p>Takes two numbers and produces another number</p>
 <ul>
-<li><code>+</code>: Add two numbers</li>
-<li><code>-</code>: Subtract two numbers</li>
-<li><code>*</code>: Multiply two numbers</li>
-<li><code>/</code>: Divide two numbers</li>
+<li><code>+</code>: Addition</li>
+<li><code>-</code>: Subtraction</li>
+<li><code>*</code>: Multiplication</li>
+<li><code>/</code>: Division</li>
 </ul>
 <p>These operators can be used to formulate mathematical expressions:</p>
-<div class="codehilite"><pre><span></span>print(2 * (5 - 7) + 12)
-8
+<div class="codehilite"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="mi">5</span> <span class="o">-</span> <span class="mi">7</span><span class="p">)</span> <span class="o">+</span> <span class="mi">12</span><span class="p">)</span>  <span class="c1"># =&gt; 8</span>
+</pre></div>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Integer Operators</h3>
+<p>Takes two numbers and produces an <em>integer</em>:</p>
+<ul>
+<li><code>//</code>: Integer Division</li>
+<li><code>%</code>: Modulus<div class="codehilite"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">/</span> <span class="mi">3</span><span class="p">)</span>    <span class="c1"># =&gt; 1.667</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">//</span> <span class="mi">3</span><span class="p">)</span>   <span class="c1"># =&gt; 1</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">%</span> <span class="mi">3</span><span class="p">)</span>    <span class="c1"># =&gt; 2</span>
 </pre></div>
 
 
-<h3>Exercise 1</h3>
+</li>
+</ul>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Workbooks</h3>
+<p><a href="http://tinyurl.com/hnxv6o6">http://tinyurl.com/hnxv6o6</a></p>
+<p>Exercise 2: Variables and Operators</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Exercise 1</h3>
 <p><em>Use operators to work out how old someone will be in 2025</em></p>
 <div class="codehilite"><pre><span></span>Since you were born in:
 1985
@@ -133,7 +229,14 @@ in 2025.
 <p>See if you can build it using only the birth year, the number 2025
 and numerical operators.</p>
 <p>Hint: age in 2025 = 2025 - birth year</p>
-<h3>Aside - Printing In One Line</h3>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Aside - Printing In One Line</h3>
 <ul>
 <li>The <code>print</code> command can accept multiple <strong>arguments</strong> which will be displayed
   on a single line.</li>
@@ -144,12 +247,25 @@ and numerical operators.</p>
 
 </li>
 </ul>
-<h2>Step 2: Variables</h2>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h2>Step 2: Variables</h2>
 <h3>Storing Values In Memory</h3>
-<h3>The Importance Of Memory</h3>
-<div class="codehilite"><pre><span></span>    :::python
-    print(&quot;Since you were born in&quot;, 1985)
-    print(&quot;you will be&quot;, 2025 - 1985, &quot;in 2025.&quot;)
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>The Importance Of Memory</h3>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Since you were born in&quot;</span><span class="p">,</span> <span class="mi">1985</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;you will be&quot;</span><span class="p">,</span> <span class="mi">2025</span> <span class="o">-</span> <span class="mi">1985</span><span class="p">,</span> <span class="s2">&quot;in 2025.&quot;</span><span class="p">)</span>
 </pre></div>
 
 
@@ -159,42 +275,78 @@ and numerical operators.</p>
 <li>What if we want to ask the user first?</li>
 </ul>
 <p>Need to allow for values to change without changing the code</p>
-<h3>Variables</h3>
+
+                
+            </section>
+    
+
+    
+            <section class="img-noframe">
+                <h3>Variables</h3>
 <ul>
 <li>Reference to memory to store a value</li>
-<li>
-<p>Identified by a name: <code>birthYear</code></p>
+<li>Identified by a name: <code>birthYear</code></li>
+</ul>
+<p><img alt="Tech Stack" src="imgs/set2/memory-1.png" /></p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Naming Variables</h3>
+<ul>
+<li>Variable names can have any combination of:<ul>
+<li>Letters: <code>age</code>, <code>DATE</code>, <code>birthDay</code></li>
+<li>The underscore: <code>a_long_variable_name</code></li>
+</ul>
 </li>
-<li>
-<p>XXX Picture</p>
+<li>Variable names can have numbers, but not as the front: <code>abc123</code></li>
+<li>Variable names are <em>case sensitive</em>:<ul>
+<li><code>birthYear</code> is different to <code>Birthyear</code></li>
+</ul>
 </li>
 </ul>
-<h3>Variables</h3>
-<ul>
-<li>
-<p>Values are stored in (or <strong>assigned</strong>) to a variable using the <code>=</code> operator:</p>
+
+                
+            </section>
+    
+
+    
+            <section class="img-noframe">
+                <h3>Variables</h3>
+<p>To use a variable, set it to a value by using the <strong>assignment</strong> operator:</p>
 <div class="codehilite"><pre><span></span><span class="n">birthYear</span> <span class="o">=</span> <span class="mi">1985</span>        <span class="c1"># Variable on left, value on right</span>
 </pre></div>
 
 
-</li>
-<li>
-<p>When using a variable name in place of a value, the variable's value will be used instead:</p>
+<p><img alt="Tech Stack" src="imgs/set2/memory-2.png" /></p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Variables</h3>
+<p>When using a variable name in place of a value, the variable's value will be used:</p>
 <div class="codehilite"><pre><span></span><span class="mi">2025</span> <span class="o">-</span> <span class="n">birthYear</span>
 </pre></div>
 
 
-</li>
-<li>
 <p>Variables can also be set from the value of other variables (or even itself)</p>
 <div class="codehilite"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="mi">2025</span> <span class="o">-</span> <span class="n">birthYear</span>
 <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
 </pre></div>
 
+                
+            </section>
+    
 
-</li>
-</ul>
-<h3>Exercise 2</h3>
+    
+            <section class="">
+                <h3>Exercise 2</h3>
 <p><em>How old is someone if they were born in 1999?</em></p>
 <p>Change your program to store the person's birth year in a variable called <code>year</code></p>
 <div class="codehilite"><pre><span></span>Since you were born in 1999
@@ -209,41 +361,81 @@ you will be 26 in 2025
 <li>1950</li>
 <li>1933</li>
 </ul>
-<h2>Step 3: Input</h2>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h2>Step 3: Input</h2>
 <h3>Accepting Input From The User</h3>
-<h3>The Importance Of Input</h3>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>The Importance Of Input</h3>
 <p><em>"Variables are great, but we're still changing the program if we want to test for a particular year"</em></p>
 <ul>
 <li>We've used variables to store constant values within our program</li>
 <li>Now, we'll use variables to store values coming <em>outside</em> our program</li>
 </ul>
 <p>We'll learn how to ask the user for values</p>
-<h3>The <code>input()</code> Function</h3>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>The <code>input()</code> Function</h3>
 <p><code>input(prompt)</code> - displays <em>prompt</em>, reads a line of input, converts it to a string, and returns that</p>
-<div class="codehilite"><pre><span></span>    :::python
-    year = input(&quot;What year were you born? &quot;)
-    age = 2025 - year
+<div class="codehilite"><pre><span></span><span class="n">year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What year were you born? &quot;</span><span class="p">)</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">2025</span> <span class="o">-</span> <span class="n">year</span>
 </pre></div>
 
 
 <p>What happens when we try that?</p>
-<div class="codehilite"><pre><span></span><span class="n">TypeError</span><span class="o">:</span> <span class="n">unsupported</span> <span class="n">operand</span> <span class="n">type</span><span class="o">(</span><span class="n">s</span><span class="o">)</span> <span class="k">for</span> <span class="n">Sub</span><span class="o">:</span> <span class="s1">&#39;int&#39;</span> <span class="n">and</span> <span class="s1">&#39;str&#39;</span>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <div class="codehilite"><pre><span></span><span class="n">TypeError</span><span class="o">:</span> <span class="n">unsupported</span> <span class="n">operand</span> <span class="n">type</span><span class="o">(</span><span class="n">s</span><span class="o">)</span> <span class="k">for</span> <span class="n">Sub</span><span class="o">:</span> <span class="s1">&#39;int&#39;</span> <span class="n">and</span> <span class="s1">&#39;str&#39;</span>
 </pre></div>
 
 
 <p>What happened? We're mixing a number with a string</p>
 <p><em>Numerical operators take two numbers and produce another number</em></p>
 <p>Need to find a way to convert a string into a number...</p>
-<h3>The <code>int()</code> Function</h3>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>The <code>int()</code> Function</h3>
 <p><code>int(x)</code> - returns an integer constructed from a number or a string</p>
-<div class="codehilite"><pre><span></span>    :::python
-    year = input(&quot;What year were you born? &quot;)
-    age = 2025 - int(year)
+<div class="codehilite"><pre><span></span><span class="n">year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What year were you born? &quot;</span><span class="p">)</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">2025</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">year</span><span class="p">)</span>
 </pre></div>
 
 
 <p>What do we get now?</p>
-<h3>Exercise 3</h3>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Exercise 3</h3>
 <p><em>Change your program to accept two years: the person's birth year and the year they want to know their age.</em></p>
 <div class="codehilite"><pre><span></span>What year were you born? 1987
 What year do you want to know your age? 1993
@@ -259,7 +451,14 @@ you will be 6 in 1993
 <li>1987, if they were born in 1959</li>
 <li>1761, if they were born in 1711</li>
 </ul>
-<h3>Challenges</h3>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Challenges</h3>
 <p><em>Extend your program to print out the person's age in doggy years:</em></p>
 <div class="codehilite"><pre><span></span>What year were you born? 1987
 What year do you want to know your age? 1993
@@ -276,8 +475,31 @@ Since you were born in 1987
 you will be 12 in 1999
 </pre></div>
 
+                
+            </section>
+    
 
-<h3>Summary</h3>
+    
+            <section class="">
+                <h3>Summary</h3>
+<ul>
+<li>Each value in Python has a <strong>type</strong></li>
+<li>The numerical operators are <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code></li>
+<li>Variables can be used to store values using the <em>assignment</em> (<code>=</code>) operator</li>
+<li>The <code>input()</code> function takes a string entered by the user</li>
+<li>The <code>int()</code> function converts a string into an integer</li>
+</ul>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Grand Final Weekend</h3>
+<p>No session next week
+(1st October)</p>
+<p>Next session on 8th October at 2:30</p>
 
                 
             </section>
