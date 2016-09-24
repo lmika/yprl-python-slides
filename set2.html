@@ -238,7 +238,16 @@ in 2025.
     
             <section class="">
                 <h3>Exercise 1B</h3>
-<p><em>Change your program to print the results like this:</em></p>
+<p><em>Change the output of your program from this...</em></p>
+<div class="codehilite"><pre><span></span>Since you were born in:
+1985
+you will be:
+40
+in 2025.
+</pre></div>
+
+
+<p><em>...to this:</em></p>
 <div class="codehilite"><pre><span></span>Since you were born in 1985
 you will be 40 in 2025.
 </pre></div>
@@ -265,7 +274,7 @@ you will be 40 in 2025.
 
 
 <ul>
-<li>What needs to be done if we want to change any of the years used?</li>
+<li>What do we need to do if we want to work out the age of someone in 2030?</li>
 <li>What if we need to run this for 30 different people, each born in a different year?</li>
 <li>What if we want to ask the user first?</li>
 </ul>
@@ -342,20 +351,19 @@ you will be 40 in 2025.
     
             <section class="">
                 <h3>Exercise 2</h3>
-<p><em>How old is someone if they were born in 1999?</em></p>
-<p>Change your program to store the person's birth year in a variable called <code>year</code></p>
+<p>Change your program to use 2 variables:</p>
+<ul>
+<li><code>year</code>: stores the person's birth year</li>
+<li><code>age</code>: stores the age of that person in 2025</li>
+</ul>
+<p>Work out how old someone will be if they were born in 1999:</p>
 <div class="codehilite"><pre><span></span>Since you were born in 1999
 you will be 26 in 2025
 </pre></div>
 
 
 <p>After that, change the variable value to see how old someone will be if they were born in:</p>
-<ul>
-<li>1995</li>
-<li>1978</li>
-<li>1950</li>
-<li>1933</li>
-</ul>
+<p>1995, 1978, 1950, 1933</p>
 
                 
             </section>
@@ -417,8 +425,8 @@ you will be 26 in 2025
             <section class="">
                 <h3>The <code>int()</code> Function</h3>
 <p><code>int(x)</code> - returns an integer constructed from a number or a string</p>
-<div class="codehilite"><pre><span></span><span class="n">year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What year were you born? &quot;</span><span class="p">)</span>
-<span class="n">age</span> <span class="o">=</span> <span class="mi">2025</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">year</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span><span class="n">year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What year were you born? &quot;</span><span class="p">))</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">2025</span> <span class="o">-</span> <span class="n">year</span>
 </pre></div>
 
 
