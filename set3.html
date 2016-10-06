@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css"-->
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/league.css">
+    <link rel="stylesheet" href="league-overrides.css">
+    <style>.hll { background-color: #49483e }
+.c { color: #75715e } /* Comment */
+.err { color: #960050; background-color: #1e0010 } /* Error */
+.k { color: #66d9ef } /* Keyword */
+.l { color: #ae81ff } /* Literal */
+.n { color: #f8f8f2 } /* Name */
+.o { color: #f92672 } /* Operator */
+.p { color: #f8f8f2 } /* Punctuation */
+.ch { color: #75715e } /* Comment.Hashbang */
+.cm { color: #75715e } /* Comment.Multiline */
+.cp { color: #75715e } /* Comment.Preproc */
+.cpf { color: #75715e } /* Comment.PreprocFile */
+.c1 { color: #75715e } /* Comment.Single */
+.cs { color: #75715e } /* Comment.Special */
+.gd { color: #f92672 } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gi { color: #a6e22e } /* Generic.Inserted */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #75715e } /* Generic.Subheading */
+.kc { color: #66d9ef } /* Keyword.Constant */
+.kd { color: #66d9ef } /* Keyword.Declaration */
+.kn { color: #f92672 } /* Keyword.Namespace */
+.kp { color: #66d9ef } /* Keyword.Pseudo */
+.kr { color: #66d9ef } /* Keyword.Reserved */
+.kt { color: #66d9ef } /* Keyword.Type */
+.ld { color: #e6db74 } /* Literal.Date */
+.m { color: #ae81ff } /* Literal.Number */
+.s { color: #e6db74 } /* Literal.String */
+.na { color: #a6e22e } /* Name.Attribute */
+.nb { color: #f8f8f2 } /* Name.Builtin */
+.nc { color: #a6e22e } /* Name.Class */
+.no { color: #66d9ef } /* Name.Constant */
+.nd { color: #a6e22e } /* Name.Decorator */
+.ni { color: #f8f8f2 } /* Name.Entity */
+.ne { color: #a6e22e } /* Name.Exception */
+.nf { color: #a6e22e } /* Name.Function */
+.nl { color: #f8f8f2 } /* Name.Label */
+.nn { color: #f8f8f2 } /* Name.Namespace */
+.nx { color: #a6e22e } /* Name.Other */
+.py { color: #f8f8f2 } /* Name.Property */
+.nt { color: #f92672 } /* Name.Tag */
+.nv { color: #f8f8f2 } /* Name.Variable */
+.ow { color: #f92672 } /* Operator.Word */
+.w { color: #f8f8f2 } /* Text.Whitespace */
+.mb { color: #ae81ff } /* Literal.Number.Bin */
+.mf { color: #ae81ff } /* Literal.Number.Float */
+.mh { color: #ae81ff } /* Literal.Number.Hex */
+.mi { color: #ae81ff } /* Literal.Number.Integer */
+.mo { color: #ae81ff } /* Literal.Number.Oct */
+.sb { color: #e6db74 } /* Literal.String.Backtick */
+.sc { color: #e6db74 } /* Literal.String.Char */
+.sd { color: #e6db74 } /* Literal.String.Doc */
+.s2 { color: #e6db74 } /* Literal.String.Double */
+.se { color: #ae81ff } /* Literal.String.Escape */
+.sh { color: #e6db74 } /* Literal.String.Heredoc */
+.si { color: #e6db74 } /* Literal.String.Interpol */
+.sx { color: #e6db74 } /* Literal.String.Other */
+.sr { color: #e6db74 } /* Literal.String.Regex */
+.s1 { color: #e6db74 } /* Literal.String.Single */
+.ss { color: #e6db74 } /* Literal.String.Symbol */
+.bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+.vc { color: #f8f8f2 } /* Name.Variable.Class */
+.vg { color: #f8f8f2 } /* Name.Variable.Global */
+.vi { color: #f8f8f2 } /* Name.Variable.Instance */
+.il { color: #ae81ff } /* Literal.Number.Integer.Long */</style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+    
+            <section class="">
+                <h1>Coding With Python</h1>
+<p><img alt="Python Logo" src="imgs/python-logo-large.png" /></p>
+<h2>Session 3: If's And While's</h2>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Goals For This Session</h3>
+<ol>
+<li>Learn what a boolean is</li>
+<li>Learn how to use the <code>if</code> and <code>else</code> statement</li>
+<li>Learn how to use the <code>while</code> statement</li>
+</ol>
+<p>We'll use this to build a simple guessing game</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>The Guessing Game</h3>
+<iframe src="https://trinket.io/embed/python/49d02cbb49?outputOnly=true&amp;start=result" width="100%" height="400"
+        frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h2>Step 1: Booleans</h2>
+<h3>Dealing With Truth</h3>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Types So Far</h3>
+<ul>
+<li><strong>Strings</strong>: Sequence of characters</li>
+<li><strong>Integers</strong>: Numbers without fractional parts</li>
+<li><strong>Floats</strong>: Numbers with fractional parts</li>
+</ul>
+<p>Today, we'll introduce a new one</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Booleans</h3>
+<ul>
+<li>Based on boolean logic</li>
+<li>Only two values:<ul>
+<li><code>True</code>: something is the case</li>
+<li><code>False</code>: something is not the case</li>
+</ul>
+</li>
+<li>If something is <code>False</code>, it is not <code>True</code> (and visa versa).</li>
+</ul>
+<p>Used for comparison and branching</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3><code>==</code>: Equals Operator</h3>
+<p>Checks to see if two values are equal to each other.</p>
+<div class="codehilite"><pre><span></span>3 == 3               # True
+5.3 == 5.3           # True
+&quot;Hello&quot; == &quot;Hello&quot;   # True
+False == False       # True
+</pre></div>
+
+
+<p>Values must be of similar types.</p>
+<div class="codehilite"><pre><span></span>3 == &quot;3&quot;             # False
+&quot;False&quot; == False     # False
+</pre></div>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3><code>!=</code>: Not Equals Operator</h3>
+<p>Checks to see if two values differ.</p>
+<div class="codehilite"><pre><span></span>3 != 4               # True
+5.3 != 8.4           # True
+&quot;Hello&quot; != &quot;World&quot;   # True
+False != True        # True
+</pre></div>
+
+
+<p>If types are not similar, returns true:</p>
+<div class="codehilite"><pre><span></span>3 != &quot;3&quot;             # True
+&quot;0&quot; != 0             # True
+</pre></div>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3><code>&gt;</code> and <code>&gt;=</code>: Greater Than</h3>
+<p><code>&gt;</code> checks to see if the first value is greater than the second.</p>
+<div class="codehilite"><pre><span></span>4 &gt; 3                # True
+2.1 &gt; 7              # False
+6 &gt; 6                # False
+</pre></div>
+
+
+<p><code>&gt;=</code> is like <code>&gt;</code> and <code>==</code>:</p>
+<div class="codehilite"><pre><span></span>4 &gt;= 3               # True
+2.1 &gt;= 7             # False
+6 &gt;= 6               # True
+</pre></div>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3><code>&lt;</code> and <code>&lt;=</code>: Less Than</h3>
+<p><code>&lt;</code> checks to see if the first value is less than the second.</p>
+<div class="codehilite"><pre><span></span>4 &lt; 3                # False
+2.1 &lt; 7              # True
+6 &lt; 6                # False
+</pre></div>
+
+
+<p><code>&lt;=</code> is like <code>&lt;</code> and <code>==</code>:</p>
+<div class="codehilite"><pre><span></span>4 &lt;= 3               # True
+2.1 &lt;= 7             # False
+6 &lt;= 6               # True
+</pre></div>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Comparison Operators</h3>
+<p>Operators which compare two values and returns a boolean:</p>
+<ul>
+<li><code>==</code>: <code>True</code> if two values are <strong>equal</strong></li>
+<li><code>!=</code>: <code>True</code> if two values are <strong>not equal</strong></li>
+<li><code>&gt;</code>: <code>True</code> if the first value is <strong>greater than</strong> the second</li>
+<li><code>&gt;=</code>: <code>True</code> if the first value is <strong>greater than or equal to</strong> the second</li>
+<li><code>&lt;</code>: <code>True</code> if the first value is <strong>less than</strong> the second</li>
+<li><code>&lt;=</code>: <code>True</code> if the first value is <strong>less than or equal to</strong> the second</li>
+</ul>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Workbooks</h3>
+<p><a href="http://tinyurl.com/hnxv6o6">http://tinyurl.com/hnxv6o6</a></p>
+<p>Workbook 3: Ifs and Whiles</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Exercise 1</h3>
+<p>Replace the blanks in the program to produce the values on the right</p>
+<div class="codehilite"><pre><span></span>print(str(2 == __))            # True
+print(str(__ &gt; 5.9))           # False
+print(str(__ &lt;= 120))          # True
+print(str(&quot;Hello&quot; != __))      # True
+print(str(True == __))         # False
+print(str(9.9 &gt;= 9.9))         # __
+</pre></div>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Answers</h3>
+<p>Replace the blanks in the program to produce the values on the right</p>
+<div class="codehilite"><pre><span></span>print(str(2 == 2))             # True
+print(str(3.0 &gt; 5.9))          # False
+print(str(5 &lt;= 120))           # True
+print(str(&quot;Hello&quot; != &quot;World&quot;)) # True
+print(str(True == True))       # False
+print(str(9.9 &gt;= 9.9))         # True
+</pre></div>
+
+                
+            </section>
+    
+
+    
+
+    
+            <section class="">
+                <h2>Step 2: The If Statement</h2>
+<h3>Running Code Some of the Time</h3>
+
+                
+            </section>
+    
+
+    
+            <section class="img-noframe">
+                <h3>Branching</h3>
+<p>Every statement in the program is executed.</p>
+<p><img alt="Program" src="imgs/set3/program.png" /></p>
+<p>Sometimes we want to execute statements when a condition is true.</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>The <code>if</code> Statement</h3>
+<div class="codehilite"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">guess</span> <span class="o">==</span> <span class="mi">5</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Displayed only if the value of the&quot;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;guess variable equals 5&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Always displayed&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<ul>
+<li>The <strong>condition</strong> within the brackets is a boolean expression</li>
+<li>If it is true, the statements within the block are executed.</li>
+<li>If it is not true, the statements within the block are skipped.</li>
+</ul>
+<p>The <em>block</em> is any code <strong>to the right</strong> of the <code>if</code> statement.</p>
+
+                
+            </section>
+    
+
+    
+            <section class="img-noframe">
+                <h3>The <code>if</code> Statement</h3>
+<p><img alt="Program" src="imgs/set3/if-then.png" /></p>
+<p>The statements to the right of <code>if</code> only runs if
+the condition is true.</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Exercise 2</h3>
+<p>Write a program which will:</p>
+<ol>
+<li>Generate a random number between 1 and 10</li>
+<li>Ask the user to enter another number</li>
+<li>
+<p>Print <code>Correct</code> only <em>if</em> both numbers are the same</p>
+<div class="codehilite"><pre><span></span>I&#39;m thinking of a number between 1 and 10
+Can you guess it? 3
+Correct
+</pre></div>
+
+
+</li>
+<li>
+<p><em>Hint:</em> Use <code>input()</code> to ask the user for a string</p>
+</li>
+<li><em>Hint:</em> Use <code>int()</code> to convert a string into a number</li>
+<li><em>Hint:</em> 4Use <code>==</code> to check if two values are equal</li>
+</ol>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>The <code>else</code> Statement</h3>
+<div class="codehilite"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">guess</span> <span class="o">==</span> <span class="mi">5</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Displayed only if the value of the&quot;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;guess variable equals 5&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Displayed only if the value of the&quot;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;guess variable does NOT equal 5&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<ul>
+<li>Comes after the block of an <code>if</code> statement.</li>
+<li>Only executed only if the condition is not <code>True</code> (i.e. <code>False</code>).</li>
+</ul>
+
+                
+            </section>
+    
+
+    
+            <section class="img-noframe">
+                <h3>The <code>else</code> Statement</h3>
+<p><img alt="Program" src="imgs/set3/if-then-else.png" /></p>
+<p>The statements to the right of <code>else</code> only runs if
+the condition is false.</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Exercise 3</h3>
+<p>Modify the program to write the random number when the
+user guessed wrong.</p>
+<div class="codehilite"><pre><span></span>I&#39;m thinking of a number between 1 and 10
+Can you guess it? 4
+No, the answer is 3
+</pre></div>
+
+
+<p>The program will still print "Correct" if the user guessed
+correctly.</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h2>Step 3: The While Statement</h2>
+<h3>Running Code More Than Once</h3>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Looping</h3>
+<ul>
+<li>The <code>if</code> statement allows us to skip some code</li>
+<li>Sometimes it is necessary to go back and rerun some code</li>
+</ul>
+<p>A <strong>loop</strong> is a way to run some code more than one time</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>The <code>while</code> Loop</h3>
+<div class="codehilite"><pre><span></span><span class="k">while</span> <span class="p">(</span><span class="n">guess</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Will keep displaying this&quot;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;while guess is less than 10&quot;</span><span class="p">)</span>
+    <span class="n">guess</span> <span class="o">=</span> <span class="n">guess</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Displayed once guess &gt;= 10&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<ul>
+<li>The <strong>condition</strong> within the brackets is a boolean expression</li>
+<li><em>While</em> it is true, the statements within the block are executed.</li>
+<li><em>Until</em> it is not true, the statements within the block are skipped.</li>
+</ul>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>The <code>while</code> Loop</h3>
+<p><img alt="Program" src="imgs/set3/while-loop.png" /></p>
+<p>The statements to the right of <code>while</code> will keep running while
+the condition is true.</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Infinite Loops</h3>
+<ul>
+<li>The <code>while</code> loop condition is checked every time</li>
+<li>
+<p>If the condition can never be <code>False</code>, the loop will never end:</p>
+<div class="codehilite"><pre><span></span><span class="k">while</span> <span class="p">(</span><span class="n">guess</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Guess is &lt; 10&quot;</span><span class="p">)</span>
+    <span class="c1"># The &quot;guess&quot; variable is never changed so</span>
+    <span class="c1"># the loop will never end</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;This is never displayed&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>To avoid, make sure that the variables within the condition change</p>
+</li>
+</ul>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Exercise 4</h3>
+<p>Modify the program to keep asking the user for a guess until
+they get it right.  If the user is too high, print "Too high".  If the user is too low, print "Too low"</p>
+<div class="codehilite"><pre><span></span>I&#39;m thinking of a number between 1 and 10
+Can you guess it? 4
+Too high
+Guess again? 2
+Too low
+Guess again? 3
+Correct
+</pre></div>
+
+
+<ul>
+<li><em>Hint:</em> You will need 2 <code>input()</code> function</li>
+<li><em>Hint:</em> <code>if</code>'s' and <code>while</code>'s can appear within other <code>if</code>'s and <code>while</code>'s.</li>
+</ul>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Summary</h3>
+<ul>
+<li>A <strong>boolean</strong> can either be <code>True</code> or <code>False</code></li>
+<li>An <code>if</code> statement executes a block if the condition is <code>True</code></li>
+<li>An <code>else</code> statement can be added to an <code>if</code>.  It will run if the condition is <code>False</code>.</li>
+<li>A <code>while</code> loop will keep running a block while the condition is <code>True</code>.</li>
+<li>A <strong>block</strong> is any code <em>to the right</em> of an <code>if</code>/<code>else</code>/<code>while</code> statement.</li>
+</ul>
+
+                
+            </section>
+    
+
+        </div>
+    </div>
+        
+    <!--script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script-->
+    <script src="reveal.js/js/reveal.js"></script>
+    <script src="reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="reveal.js/plugin/notes/notes.js"></script>
+    <script>hljs.initHighlightingOnLoad(); Reveal.initialize();</script>
+</body>
+</html>
