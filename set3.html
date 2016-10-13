@@ -87,6 +87,16 @@
 
     
             <section class="">
+                <h3>Workbooks</h3>
+<p><a href="http://tinyurl.com/hnxv6o6">http://tinyurl.com/hnxv6o6</a></p>
+<p>Workbook 3: Ifs and Whiles</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
                 <h3>Goals For This Session</h3>
 <ol>
 <li>Learn what a boolean is</li>
@@ -144,7 +154,25 @@
 </li>
 <li>If something is <code>False</code>, it is not <code>True</code> (and visa versa).</li>
 </ul>
-<p>Used for comparison and branching</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Comparison Operators</h3>
+<p>Used to compare how two values relate:</p>
+<ul>
+<li><em>Does A equal or not equal B?</em></li>
+<li><em>Is B greater than A?</em></li>
+<li><em>Is A less than B?</em></li>
+</ul>
+<p>The result is a Boolean value, either <code>True</code> or <code>False</code></p>
+<ul>
+<li>Either <em>A equals B</em> (<code>True</code>), or it doesn't (<code>False</code>).</li>
+<li>Either <em>B is greater than A</em> (<code>True</code>), or it isn't (<code>False</code>).</li>
+</ul>
 
                 
             </section>
@@ -232,8 +260,7 @@ False != True        # True
 
     
             <section class="">
-                <h3>Comparison Operators</h3>
-<p>Operators which compare two values and returns a boolean:</p>
+                <h3>Comparison Operator Summary</h3>
 <ul>
 <li><code>==</code>: <code>True</code> if two values are <strong>equal</strong></li>
 <li><code>!=</code>: <code>True</code> if two values are <strong>not equal</strong></li>
@@ -249,24 +276,14 @@ False != True        # True
 
     
             <section class="">
-                <h3>Workbooks</h3>
-<p><a href="http://tinyurl.com/hnxv6o6">http://tinyurl.com/hnxv6o6</a></p>
-<p>Workbook 3: Ifs and Whiles</p>
-
-                
-            </section>
-    
-
-    
-            <section class="">
                 <h3>Exercise 1</h3>
 <p>Replace the blanks in the program to produce the values on the right</p>
-<div class="codehilite"><pre><span></span>print(str(2 == __))            # True
-print(str(__ &gt; 5.9))           # False
-print(str(__ &lt;= 120))          # True
-print(str(&quot;Hello&quot; != __))      # True
-print(str(True == __))         # False
-print(str(9.9 &gt;= 9.9))         # __
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mi">2</span> <span class="o">==</span> <span class="n">__</span><span class="p">))</span>            <span class="c1"># True</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">__</span> <span class="o">&gt;</span> <span class="mf">5.9</span><span class="p">))</span>           <span class="c1"># False</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">__</span> <span class="o">&lt;=</span> <span class="mi">120</span><span class="p">))</span>          <span class="c1"># True</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span> <span class="o">!=</span> <span class="n">__</span><span class="p">))</span>      <span class="c1"># True</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="bp">True</span> <span class="o">==</span> <span class="n">__</span><span class="p">))</span>         <span class="c1"># False</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mf">9.9</span> <span class="o">&gt;=</span> <span class="mf">9.9</span><span class="p">))</span>         <span class="c1"># __</span>
 </pre></div>
 
                 
@@ -277,12 +294,12 @@ print(str(9.9 &gt;= 9.9))         # __
             <section class="">
                 <h3>Answers</h3>
 <p>Replace the blanks in the program to produce the values on the right</p>
-<div class="codehilite"><pre><span></span>print(str(2 == 2))             # True
-print(str(3.0 &gt; 5.9))          # False
-print(str(5 &lt;= 120))           # True
-print(str(&quot;Hello&quot; != &quot;World&quot;)) # True
-print(str(True == True))       # False
-print(str(9.9 &gt;= 9.9))         # True
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">2</span><span class="p">))</span>             <span class="c1"># True</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mf">3.0</span> <span class="o">&gt;</span> <span class="mf">5.9</span><span class="p">))</span>          <span class="c1"># False</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mi">5</span> <span class="o">&lt;=</span> <span class="mi">120</span><span class="p">))</span>           <span class="c1"># True</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span> <span class="o">!=</span> <span class="s2">&quot;World&quot;</span><span class="p">))</span> <span class="c1"># True</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="bp">True</span> <span class="o">==</span> <span class="bp">False</span><span class="p">))</span>      <span class="c1"># False</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mf">9.9</span> <span class="o">&gt;=</span> <span class="mf">9.9</span><span class="p">))</span>         <span class="c1"># True</span>
 </pre></div>
 
                 
@@ -363,6 +380,27 @@ Correct
 <li>Use <code>input()</code> to ask the user for a string</li>
 <li>Use <code>int()</code> to convert a string into a number</li>
 <li>Use <code>==</code> to check if two values are equal</li>
+</ul>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>A Way To Test This Program</h3>
+<ul>
+<li>Anything from a <code>#</code> to the end of the line is a <em>comment</em>, and will be ignored by Python.</li>
+<li>Comments can be used to disable parts of the program temporarily.</li>
+</ul>
+<p>To use it here:</p>
+<ul>
+<li>Comment out the line setting <code>num</code> and add a new line setting <code>num</code> to a number you know:<div class="codehilite"><pre><span></span><span class="c1"># num = randrange(10) + 1</span>
+<span class="n">num</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></div>
+
+
+</li>
 </ul>
 
                 

@@ -9,10 +9,11 @@
 }
 
 .reveal div.codehilite pre {
-    background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
     border: 2px solid #eee;
     padding: 4px 8px;
     font-size: 0.7em;
+    font-weight: bold;
 }
 
 .reveal strong {

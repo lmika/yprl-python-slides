@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css"-->
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/league.css">
+    <link rel="stylesheet" href="league-overrides.css">
+    <style>.hll { background-color: #49483e }
+.c { color: #75715e } /* Comment */
+.err { color: #960050; background-color: #1e0010 } /* Error */
+.k { color: #66d9ef } /* Keyword */
+.l { color: #ae81ff } /* Literal */
+.n { color: #f8f8f2 } /* Name */
+.o { color: #f92672 } /* Operator */
+.p { color: #f8f8f2 } /* Punctuation */
+.ch { color: #75715e } /* Comment.Hashbang */
+.cm { color: #75715e } /* Comment.Multiline */
+.cp { color: #75715e } /* Comment.Preproc */
+.cpf { color: #75715e } /* Comment.PreprocFile */
+.c1 { color: #75715e } /* Comment.Single */
+.cs { color: #75715e } /* Comment.Special */
+.gd { color: #f92672 } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gi { color: #a6e22e } /* Generic.Inserted */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #75715e } /* Generic.Subheading */
+.kc { color: #66d9ef } /* Keyword.Constant */
+.kd { color: #66d9ef } /* Keyword.Declaration */
+.kn { color: #f92672 } /* Keyword.Namespace */
+.kp { color: #66d9ef } /* Keyword.Pseudo */
+.kr { color: #66d9ef } /* Keyword.Reserved */
+.kt { color: #66d9ef } /* Keyword.Type */
+.ld { color: #e6db74 } /* Literal.Date */
+.m { color: #ae81ff } /* Literal.Number */
+.s { color: #e6db74 } /* Literal.String */
+.na { color: #a6e22e } /* Name.Attribute */
+.nb { color: #f8f8f2 } /* Name.Builtin */
+.nc { color: #a6e22e } /* Name.Class */
+.no { color: #66d9ef } /* Name.Constant */
+.nd { color: #a6e22e } /* Name.Decorator */
+.ni { color: #f8f8f2 } /* Name.Entity */
+.ne { color: #a6e22e } /* Name.Exception */
+.nf { color: #a6e22e } /* Name.Function */
+.nl { color: #f8f8f2 } /* Name.Label */
+.nn { color: #f8f8f2 } /* Name.Namespace */
+.nx { color: #a6e22e } /* Name.Other */
+.py { color: #f8f8f2 } /* Name.Property */
+.nt { color: #f92672 } /* Name.Tag */
+.nv { color: #f8f8f2 } /* Name.Variable */
+.ow { color: #f92672 } /* Operator.Word */
+.w { color: #f8f8f2 } /* Text.Whitespace */
+.mb { color: #ae81ff } /* Literal.Number.Bin */
+.mf { color: #ae81ff } /* Literal.Number.Float */
+.mh { color: #ae81ff } /* Literal.Number.Hex */
+.mi { color: #ae81ff } /* Literal.Number.Integer */
+.mo { color: #ae81ff } /* Literal.Number.Oct */
+.sb { color: #e6db74 } /* Literal.String.Backtick */
+.sc { color: #e6db74 } /* Literal.String.Char */
+.sd { color: #e6db74 } /* Literal.String.Doc */
+.s2 { color: #e6db74 } /* Literal.String.Double */
+.se { color: #ae81ff } /* Literal.String.Escape */
+.sh { color: #e6db74 } /* Literal.String.Heredoc */
+.si { color: #e6db74 } /* Literal.String.Interpol */
+.sx { color: #e6db74 } /* Literal.String.Other */
+.sr { color: #e6db74 } /* Literal.String.Regex */
+.s1 { color: #e6db74 } /* Literal.String.Single */
+.ss { color: #e6db74 } /* Literal.String.Symbol */
+.bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+.vc { color: #f8f8f2 } /* Name.Variable.Class */
+.vg { color: #f8f8f2 } /* Name.Variable.Global */
+.vi { color: #f8f8f2 } /* Name.Variable.Instance */
+.il { color: #ae81ff } /* Literal.Number.Integer.Long */</style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+    
+            <section class="">
+                <h1>Coding With Python</h1>
+<p><img alt="Python Logo" src="imgs/python-logo-large.png" /></p>
+<h2>Session 4: Lists And For Loops</h2>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Workbooks</h3>
+<p><a href="http://tinyurl.com/hnxv6o6">http://tinyurl.com/hnxv6o6</a></p>
+<p>Workbook 4: Lists And For Loops</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Goals For This Session</h3>
+<ol>
+<li>Learn what a list is</li>
+<li>Learn how to use the <code>for</code> loop</li>
+<li>Learn how we can we leave a loop early</li>
+</ol>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Python Quiz</h3>
+<iframe src="https://trinket.io/embed/python/827c8d6c47?outputOnly=true&amp;start=result" width="100%" height="400"
+        frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h2>Step 1: The List</h2>
+<h3>Compound Types</h3>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Types So Far</h3>
+<ul>
+<li><strong>Strings</strong>: Sequence of characters</li>
+<li><strong>Integers</strong>: Numbers without fractional parts</li>
+<li><strong>Floats</strong>: Numbers with fractional parts</li>
+<li><strong>Booleans</strong>: Either <code>True</code> or <code>False</code></li>
+</ul>
+<p>What do these have in common?</p>
+
+                
+            </section>
+    
+
+    
+            <section class="img-noframe">
+                <h3>Simple Type</h3>
+<p><em>Answer</em>: A variable storing something of this type
+can only hold <strong>one value</strong>.</p>
+<p><img alt="Program" src="imgs/set4/simple-values.png" /></p>
+<p>Also called <em>atomic values</em> (i.e. they cannot be split up).</p>
+
+                
+            </section>
+    
+
+    
+            <section class="img-noframe">
+                <h3>Compound Types</h3>
+<p>Variables storing a compound type can hold <strong>multiple values</strong>.</p>
+<p><img alt="Program" src="imgs/set4/compound-values.png" /></p>
+
+                
+            </section>
+    
+
+    
+            <section class="img-noframe">
+                <h3>List</h3>
+<p>Holds an <em>ordered sequence</em> of values.</p>
+<div class="codehilite"><pre><span></span><span class="n">birthYears</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1985</span><span class="p">,</span> <span class="mi">2007</span><span class="p">,</span> <span class="mi">1971</span><span class="p">,</span> <span class="mi">1682</span><span class="p">]</span>
+</pre></div>
+
+
+<p><img alt="Program" src="imgs/set4/list.png" /></p>
+<ul>
+<li>Each value in the list is called an <strong>element</strong>.</li>
+<li>Each element has an associated <em>index</em>, starting from 0.</li>
+<li>The number of elements in the list is called the <strong>length</strong>.</li>
+</ul>
+
+                
+            </section>
+    
+
+    
+            <section class="img-noframe">
+                <h3>List Elements</h3>
+<p>To get a value of a list element, use <code>[]</code></p>
+<div class="codehilite"><pre><span></span><span class="n">birthYears</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>      <span class="c1"># Returns 1971</span>
+</pre></div>
+
+
+<p>The element index always starts with 0.</p>
+<p><img alt="Program" src="imgs/set4/list-index.png" /></p>
+
+                
+            </section>
+    
+
+    
+            <section class="img-noframe">
+                <h3>List Elements</h3>
+<p>To change the value of a list element, use <code>[]</code> with the
+assignment operator (<code>=</code>):</p>
+<div class="codehilite"><pre><span></span><span class="n">birthYears</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1997</span>
+</pre></div>
+
+
+<p><img alt="Program" src="imgs/set4/list-index-set.png" /></p>
+
+                
+            </section>
+    
+
+    
+            <section class="img-noframe">
+                <h3>List Length</h3>
+<p>To get the list length (i.e. number of elements), use the <code>len()</code> function:</p>
+<div class="codehilite"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">birthYears</span><span class="p">)</span>     <span class="c1"># Returns 4</span>
+</pre></div>
+
+
+<p><img alt="Program" src="imgs/set4/list-len.png" /></p>
+
+                
+            </section>
+    
+
+    
+            <section class="img-noframe">
+                <h3>Adding Elements To A List</h3>
+<p>To add a value to the end of the list, use the <code>append</code> method:</p>
+<div class="codehilite"><pre><span></span><span class="n">birthYears</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">2016</span><span class="p">)</span>
+</pre></div>
+
+
+<p>This changes the structure of the list stored in <code>birthYears</code>:</p>
+<p><img alt="Program" src="imgs/set4/list-index-append.png" /></p>
+
+                
+            </section>
+    
+
+    
+            <section class="img-noframe">
+                <h3>Types Of Elements</h3>
+<p>Lists can contain any other value, including other lists:</p>
+<div class="codehilite"><pre><span></span><span class="n">items</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;One&quot;</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">]]</span>
+</pre></div>
+
+
+<p><img alt="Program" src="imgs/set4/list-hetrogenous.png" /></p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Exercise 1</h3>
+<p>Write a program that has:</p>
+<ul>
+<li>The list <code>questions</code> that contain 3 or 4 quiz question</li>
+<li>The list <code>correctAnswers</code> that contain the answers</li>
+</ul>
+<p>Print each question and answer together:</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">questions</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;A:&quot;</span><span class="p">,</span> <span class="n">correctAnswers</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+
+
+<p>Example:</p>
+<div class="codehilite"><pre><span></span>PYTHON QUIZ:
+What is used to store data in memory? A: variables
+What statement can be used for skipping code? A: if
+Which loop will run until a boolean is False? A: while
+What method is used to add something to a list? A: append
+</pre></div>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h2>Step 2: The <code>for</code> Loop</h2>
+<h3>Looping Over Values Of A List</h3>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>From The Last Exercise</h3>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">questions</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;A:&quot;</span><span class="p">,</span> <span class="n">correctAnswers</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">questions</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;A:&quot;</span><span class="p">,</span> <span class="n">correctAnswers</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">questions</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;A:&quot;</span><span class="p">,</span> <span class="n">correctAnswers</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">questions</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;A:&quot;</span><span class="p">,</span> <span class="n">correctAnswers</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+
+
+<ul>
+<li>What if we want to print things differently?</li>
+<li>What if we had 500 questions and answers?</li>
+</ul>
+<p>Is there some way we could loop through each element?</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>The <code>for</code> Loop</h3>
+<p>Takes a <em>list</em> and a variable name:</p>
+<div class="codehilite"><pre><span></span><span class="k">for</span> <span class="n">currentQuestion</span> <span class="ow">in</span> <span class="n">questions</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">currentQuestion</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;All Done&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>For each element in <code>questions</code>:</p>
+<ul>
+<li>Set <code>currentQuestion</code> to that element</li>
+<li>Print the value of <code>currentQuestion</code></li>
+<li>Go back to the top and get the next element in <code>questions</code></li>
+</ul>
+<p>Keep going until all the elements in <code>questions</code> has been printed.  Then print "All Done".</p>
+
+                
+            </section>
+    
+
+    
+            <section class="img-noframe">
+                <h3>The <code>for</code> Loop</h3>
+<p><img alt="Program" src="imgs/set4/for-loop.png" /></p>
+<p>The statements to the right of <code>for</code> will run for
+each value of <code>questions</code>.</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Exercise 2</h3>
+<p>Change your program to display a question, then ask the user to enter
+an answer using <code>input()</code>.  Do this for each question:</p>
+<div class="codehilite"><pre><span></span>PYTHON QUIZ:
+What is used to store data in memory? &lt;user&#39;s answer&gt;
+What statement can be used for skipping code? &lt;user&#39;s answer&gt;
+</pre></div>
+
+
+<p>Store the user's answer in another list called <code>answers</code>.</p>
+<ul>
+<li><em>Hint</em>: you will need to set <code>answers</code> to the empty list (<code>[]</code>) before using it.</li>
+<li><em>Hint</em>: use the <code>append()</code> method call to add elements to a list (e.g. <code>answers.append()</code>).</li>
+</ul>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Checking The Answers</h3>
+<p>The next step would be to check the user's answers.
+But we have a problems: <code>for</code> can only use <em>one</em> list.</p>
+<div class="codehilite"><pre><span></span><span class="n">answers</span> <span class="o">=</span> <span class="p">[</span><span class="o">...</span><span class="p">]</span>
+<span class="n">correctAnswers</span> <span class="o">=</span> <span class="p">[</span><span class="o">...</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="err">???</span><span class="p">:</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">answer</span> <span class="o">==</span> <span class="n">correctAnswer</span><span class="p">):</span>
+        <span class="o">...</span>
+</pre></div>
+
+
+<p>How can we loop over two?</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Looping Over Two Arrays Easily</h3>
+<ul>
+<li>Use a variable to hold the current index</li>
+<li>Read the element at the given index at the loop start</li>
+<li>Add 1 to the index variable at the loop end<div class="codehilite"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">answer</span> <span class="ow">in</span> <span class="n">answers</span><span class="p">:</span>
+    <span class="n">correctAnswer</span> <span class="o">=</span> <span class="n">correctAnswers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">answer</span> <span class="o">==</span> <span class="n">correctAnswer</span><span class="p">):</span>
+        <span class="o">...</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+
+
+</li>
+</ul>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Exercise 3</h3>
+<p>After asking the user to provide their answers, use a <code>for</code> loop to
+check that they are correct.</p>
+<ul>
+<li>The user's answers are in the list of <code>answers</code></li>
+<li>The correct answers are in the list of <code>correctAnswers</code></li>
+</ul>
+<p>For each correct answer, give the user a point.  At the end of the program, print the
+user's score:</p>
+<div class="codehilite"><pre><span></span>You scored 2 out of 4
+</pre></div>
+
+
+<ul>
+<li><em>Hint:</em> Use the <code>len()</code> function to get the number of questions.</li>
+</ul>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h2>Step 3: The <code>break</code> Statement</h2>
+<h3>Ending A Loop Early</h3>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Letting The User Leave Early</h3>
+<p>How do we let the user leave halfway through?</p>
+<div class="codehilite"><pre><span></span>PYTHON QUIZ:
+What is used to store data in memory? variables
+What statement can be used for skipping code? exit
+You scored 2 out of 4
+</pre></div>
+
+
+<p>Need to exit the <code>for</code> loop before every question has been asked.</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>The <code>break</code> Statement</h3>
+<p>Leaves a loop and goes to the statement just after it.</p>
+<div class="codehilite"><pre><span></span><span class="k">for</span> <span class="n">question</span> <span class="ow">in</span> <span class="n">questions</span><span class="p">:</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">user_is_done</span><span class="p">):</span>
+        <span class="k">break</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Never be display if we break&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;User is done or we&#39;re out of questions&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>If <code>user_is_done</code> becomes <code>True</code>, the loop ends immediately and
+jumps to the second print.</p>
+<p>Breaks also work with <code>while</code> loops.</p>
+
+                
+            </section>
+    
+
+    
+            <section class="img-noframe">
+                <h3>The <code>break</code> Statement</h3>
+<p><img alt="Program" src="imgs/set4/for-loop-break.png" /></p>
+<p>Everything in the loop is skipped when a <code>break</code> is executed.</p>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3><code>break</code> Statement With Two Loops</h3>
+<p>What if we have a <code>break</code> statement in two loops?</p>
+<div class="codehilite"><pre><span></span>for first in first_items:
+    for second in second_items:
+        if (first == second):
+            break
+</pre></div>
+
+
+<ul>
+<li>The <code>break</code> will only leave the loop in directly appears in (the <em>inner</em> one).</li>
+<li>All the elements in <code>first_items</code> will still be processed.</li>
+</ul>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Exercise 4</h3>
+<p>Modify your program to let the user end the quiz whenever they enter <code>exit</code> as
+an answer.</p>
+<div class="codehilite"><pre><span></span>PYTHON QUIZ:
+What is used to store data in memory? variables
+What statement can be used for skipping code? exit
+You scored 2 out of 4
+</pre></div>
+
+
+<p>The quiz should still display the user's score.</p>
+<ul>
+<li><em>Hint</em>: you will need to add one more <code>if</code> statement</li>
+</ul>
+
+                
+            </section>
+    
+
+    
+            <section class="">
+                <h3>Summary</h3>
+<ul>
+<li>A <strong>list</strong> can be used to hold multiple values</li>
+<li>The values in a list are called <strong>elements</strong>, and can be accessed using it's <strong>index</strong>.</li>
+<li>The list <strong>length</strong> can be read using <code>len()</code>.</li>
+<li>The <code>for</code> loop can be used to loop through elements of a list.</li>
+<li>The <code>break</code> statement can be used to exit any loop.</li>
+</ul>
+
+                
+            </section>
+    
+
+        </div>
+    </div>
+        
+    <!--script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script-->
+    <script src="reveal.js/js/reveal.js"></script>
+    <script src="reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="reveal.js/plugin/notes/notes.js"></script>
+    <script>hljs.initHighlightingOnLoad(); Reveal.initialize();</script>
+</body>
+</html>
