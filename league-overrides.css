@@ -37,3 +37,13 @@
     border: none;
     box-shadow: none;
 }
+
+.reveal .columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.reveal .column {
+    flex-grow: 1;
+    width: 50%;
+}
